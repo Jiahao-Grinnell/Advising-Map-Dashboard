@@ -8,7 +8,7 @@ interface DataItem {
 const ChampionsBar = () => {
   const data = [
     { label: "Joyce Stern", value: 14.2 },
-    { label: "Academic Advising (Joyce's Office)", value: 10.0 },
+    { label: "Academic Advising\n(Joyce's Office)", value: 10.0 },
     { label: "Faculty/Coaches", value: 6.7 },
     { label: "CLS", value: 6.7 },
     { label: "Belinda Backous", value: 5.8 },

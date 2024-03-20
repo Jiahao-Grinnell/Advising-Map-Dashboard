@@ -1,8 +1,7 @@
 import React from "react";
 import { ResponsivePie } from "@nivo/pie";
 
-const GapThemes = () => {
-  const [themes, setThemes] = React.useState([]);
+const GapThemes = ({ themes, setThemes }) => {
   const gthemes = {
     "Enhanced Academic and Registration Processes": {
       "Effective Course Registration and Engagement with Advisees/Overhaul of Registration Process": 4,
@@ -107,8 +106,19 @@ const GapThemes = () => {
   );
 
   const handleClick = ({ id }) => {
-    const newThemes = [...themes, { _id: id, v: gthemes[id] }];
-    setThemes(newThemes);
+    let themeSelected = false;
+    for (let i = 0; i < themes.length && !themeSelected; i++)
+      themeSelected = id === themes[i]._id;
+
+    console.log(id, themeSelected);
+
+    if (themeSelected) {
+      const newThemes = themes.filter((t) => t._id !== id);
+      setThemes(newThemes);
+    } else {
+      const newThemes = [...themes, { _id: id, v: gthemes[id] }];
+      setThemes(newThemes);
+    }
   };
 
   return (
@@ -141,21 +151,6 @@ const GapThemes = () => {
         motionConfig={"wobbly"}
         onClick={handleClick}
       />
-      <section>
-        {themes.map((theme) => {
-          console.log(theme.v);
-          return (
-            <>
-              <h4 className="subtitle">{theme._id}</h4>
-              {Object.entries(theme.v).map(([k, v]) => (
-                <li className="subsubtitle">
-                  {k}: {v}
-                </li>
-              ))}
-            </>
-          );
-        })}
-      </section>
     </>
   );
 };
