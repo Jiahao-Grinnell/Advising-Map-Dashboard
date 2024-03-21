@@ -16,9 +16,14 @@ const StewardsSankey = () => {
   return (
     <>
       <h2 className="title">Stewards & Champions</h2>
+      <div style={{ display: "flex" }}>
+        <h6 className="santitle left">Stewards</h6>
+        <h6 className="santitle center">Advising Entities</h6>
+        <h6 className="santitle right">Champions</h6>
+      </div>
       <ResponsiveSankey
         data={data}
-        margin={{ top: 40, right: 50, bottom: 40, left: 50 }}
+        margin={{ top: 0, right: 50, bottom: 40, left: 50 }}
         align="justify"
         colors={{ scheme: "category10" }}
         nodeOpacity={1}

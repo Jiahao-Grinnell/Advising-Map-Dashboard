@@ -29,6 +29,29 @@ body {
   padding-left: 10px;
 }
 
+.santitle {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 0px;
+  color: #ffffff;
+  width: 33%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
 .subsubtitle {
   font-family: "Poppins";
   font-weight: 300;
@@ -46,14 +69,14 @@ body {
 
 .sankey-con {
   width: 70%;
-  min-height: 1000px !important;
-  height: 1000px !important;
+  min-height: 1030px !important;
+  height: 1030px !important;
 }
 
 .sankey-concon {
   width: 70%;
-  min-height: 1010px !important;
-  height: 1010px !important;
+  min-height: 1100px !important;
+  height: 1100px !important;
 }
 
 .na {
