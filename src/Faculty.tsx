@@ -12,6 +12,7 @@ import { gapsPie } from "./data/faculty/gaps";
 import ThemesList, { Theme } from "./components/ThemesList";
 import { gapThemesData } from "./data/faculty/gapThemes";
 import { desiredThemesData } from "./data/faculty/desiredThemes";
+import Heading from "./components/Heading";
 
 const FacultyPage = () => {
   const [gapThemes, setGapThemes] = React.useState<Theme[]>([]);
@@ -47,6 +48,9 @@ const FacultyPage = () => {
 
   return (
     <Grid container spacing={1} style={{ height: "100%" }}>
+      <Grid item xs={12}>
+        <Heading text={"Faculty Advising Input"} />
+      </Grid>
       <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo title={"Assets Pie Chart"} data={assetPie} />
       </Grid>
@@ -73,18 +77,21 @@ const FacultyPage = () => {
       </Grid>
       {/* // */}
       <Grid item xs={4} className="grid-container" style={{ minHeight: 600 }}>
-        <PieChartNivo title={"Plentiful Chart"} data={plentifulPie} />
+        <PieChartNivo
+          title={"Resources Seen as Plentiful"}
+          data={plentifulPie}
+        />
       </Grid>
       <Grid item xs={4} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo
-          title={"Desired Chart"}
+          title={"Desired Resources"}
           data={desiredPie}
           onClick={desThemehandler}
         />
       </Grid>
       <Grid item xs={4} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo
-          title={"Gaps Pie"}
+          title={"Gaps Noted (categories AI generated)"}
           data={gapsPie}
           onClick={gapThemehandler}
         />

@@ -34,7 +34,7 @@ const Dropdown = ({
 
   return (
     <div className="multi-select-container">
-      <h3>Select Categories:</h3>
+      <h3>Select Types of Advising:</h3>
       <select
         multiple
         value={selectedOptions}

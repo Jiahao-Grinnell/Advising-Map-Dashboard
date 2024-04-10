@@ -14,10 +14,10 @@ const BubbleChartNivo = ({ title, data }) => {
           from: "color",
           modifiers: [["brighter", 0.4]],
         }}
-        padding={4}
+        padding={50}
         enableLabels={true}
-        labelsFilter={(n) => 2 === n.node.depth}
-        labelsSkipRadius={35}
+        labelsFilter={(n) => 1 === n.node.depth}
+        labelsSkipRadius={0}
         labelTextColor={{
           from: "color",
           modifiers: [["darker", 2]],

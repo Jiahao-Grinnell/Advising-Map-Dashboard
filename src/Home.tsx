@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <section>
-        <Heading text={"Grinnell College Advising Data"} />
+        <Heading text={"Visualizing the Advising Landscape at Grinnell"} />
       </section>
       <nav>
         <ul>

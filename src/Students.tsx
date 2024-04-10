@@ -12,6 +12,7 @@ import {
 import { Node, Link } from "./charts/students/AdvisingEntities";
 import ThemesList, { Theme } from "./components/ThemesList";
 import { stuThemesData } from "./data/students/stuThemesData";
+import Heading from "./components/Heading";
 
 const StudentsPage = () => {
   const [selectedOptions, setSelectedOptions] = React.useState<string[]>([]);
@@ -67,6 +68,13 @@ const StudentsPage = () => {
 
   return (
     <Grid container spacing={1} style={{ height: "100%" }}>
+      <Grid item xs={12}>
+        <Heading
+          text={
+            "Add title: Academic Advising Questions Students Seek Answers to (and From Whom)"
+          }
+        />
+      </Grid>
       <Grid item xs={3} className="grid-container" style={{ minHeight: 680 }}>
         <DropdownSelector
           toggl={() => {}}
@@ -92,7 +100,7 @@ const StudentsPage = () => {
       </Grid>
       <Grid item xs={12} className="grid-container">
         <ThemesList
-          title={"Student Curated List of Post-its"}
+          title={"Select Student Advising Questions"}
           themes={stuThemes}
         />
       </Grid>
