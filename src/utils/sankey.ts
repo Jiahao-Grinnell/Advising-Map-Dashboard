@@ -1,4 +1,4 @@
-export const stewardNodes = [
+export const sNodes = [
   { id: "Tammy Whitney" },
   { id: "\tCLS" },
   { id: "\tIGE" },
@@ -118,7 +118,7 @@ export const stewardNodes = [
   { id: " Registrar/Registrar's Office" },
 ];
 
-export const stewardLinks = [
+export const sLinks = [
   { source: "Dean's Office", target: "Higher Administration", value: 9 },
   {
     source: "Joyce's Office/Academic Advising",

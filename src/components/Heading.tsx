@@ -8,7 +8,6 @@ const Heading: React.FC<HeadingProps> = ({ text }) => {
   return (
     <h1
       style={{
-        color: "white",
         fontSize: "21px",
         width: "100%",
         textAlign: "left",

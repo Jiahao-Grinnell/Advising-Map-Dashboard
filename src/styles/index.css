@@ -3,9 +3,9 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #121212;
-  /* color: #ffffff; */
+  background-color: #fff;
   /* overflow: hidden; */
+  color: #000;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -17,7 +17,6 @@ body {
   font-size: 15px;
   padding: 5px;
   line-height: 0px;
-  color: #ffffff;
 }
 
 .subtitle {
@@ -25,7 +24,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 0px;
-  color: #ffffff;
   padding-left: 10px;
 }
 
@@ -34,7 +32,6 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 0px;
-  color: #ffffff;
   width: 33%;
   padding-left: 25px;
   padding-right: 25px;
@@ -57,7 +54,6 @@ body {
   font-weight: 300;
   font-size: 13px;
   /* line-height: 0px; */
-  color: #ffffff;
   padding-left: 20px;
 }
 
@@ -69,14 +65,14 @@ body {
 
 .sankey-con {
   width: 70%;
-  min-height: 1030px !important;
-  height: 1030px !important;
+  min-height: 650px !important;
+  height: 650px !important;
 }
 
 .sankey-concon {
   width: 70%;
-  min-height: 1100px !important;
-  height: 1100px !important;
+  min-height: 680px !important;
+  height: 680px !important;
 }
 
 .na {
@@ -112,18 +108,17 @@ body {
 }
 
 .grid-container {
-  background-color: #1e1e1e;
+  background-color: #e5e8e8;
   border-radius: 8px;
   padding: 20px;
   padding-top: 15px;
   max-height: 50vh;
-  border: 3px solid #121212;
+  border: 3px solid #fff;
   width: 100%;
 }
 
 .button {
   background-color: #282828;
-  color: #ffffff;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
