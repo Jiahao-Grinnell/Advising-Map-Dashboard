@@ -561,7 +561,6 @@ export const advEntitiesOptions = [
   { id: "Career Planning" },
   { id: "Graduate/Professional School" },
   { id: "Choosing a Major/Concentration" },
-  { id: "Choosing a Major/Concentraton" },
   { id: "Finding Balance/Personal Needs" },
   { id: "Identity-Specific Needs" },
   { id: "Internships/Gaining Experience" },

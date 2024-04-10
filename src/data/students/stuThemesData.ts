@@ -45,7 +45,7 @@ export const stuThemesData = {
     "What skills do employers look for/should you include on a resume for a specific role?",
     "What on-campus jobs will help me prepare?",
   ],
-  "Career Skills (How do I…)": [
+  "Career Skills (How do I …)": [
     "How do I build network and maintain contact/relationships with people, alumni, … so that this network help my professional development after I graduate?",
     "What career skills do I need for ____ field and how do I gain them?",
     "How do I write a good cover letter?",
@@ -65,13 +65,13 @@ export const stuThemesData = {
     "What are my admission prospects for a given graduate program?",
     "What kind of grad schools are favorable for Grinnell students? Are there differences?",
   ],
-  "MAPS and Independent Study": [
+  "MAPs & Independent Study": [
     "How do I go about doing a MAP or other research at Grinnell?",
     "When in my four years should I look to do research?",
     "Where are the applications for a MAP?",
     "Can I use MAPs to get research published?",
   ],
-  "Academic Support and Resources": [
+  "Academic Support & Resources": [
     "What should I do in office hours?",
     "This is how I am preparing for X class. Do you know resources that would help me?",
     "How can I calculate my grade? How do I maintain grades?",
@@ -80,7 +80,7 @@ export const stuThemesData = {
     "How do I improve my writing?",
     "What resources are there for my disability?",
   ],
-  "Identity-specific Needs": [
+  "Identity-Specific Needs": [
     "What are some opportunities for international students in this field (e.g., what websites should I use?)?",
     "What opportunities can I participate in given that I have an F-1 visa?",
     "Is there any support for low-income students for flights?",

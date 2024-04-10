@@ -11,6 +11,7 @@ interface ThemesListProps {
 }
 
 const ThemesList: React.FC<ThemesListProps> = ({ title, themes }) => {
+  console.log(themes);
   return (
     <section
       style={{ overflowY: "scroll", height: "100%" }}

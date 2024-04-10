@@ -10,7 +10,7 @@ import {
   advEntitiesOptions,
 } from "./data/students/advEntities";
 import { Node, Link } from "./charts/students/AdvisingEntities";
-import { Theme } from "./components/ThemesList";
+import ThemesList, { Theme } from "./components/ThemesList";
 import { stuThemesData } from "./data/students/stuThemesData";
 
 const StudentsPage = () => {
@@ -73,6 +73,7 @@ const StudentsPage = () => {
           options={advEntitiesOptions}
           selectedOptions={selectedOptions}
           setSelectedOptions={setSelectedOptions}
+          addElem={stuThemehandler}
         />
       </Grid>
       <Grid item xs={9} className="grid-container sankey-concon">
@@ -88,6 +89,12 @@ const StudentsPage = () => {
             </p>
           )}
         </Grid>
+      </Grid>
+      <Grid item xs={12} className="grid-container">
+        <ThemesList
+          title={"Student Curated List of Post-its"}
+          themes={stuThemes}
+        />
       </Grid>
     </Grid>
   );

@@ -11,6 +11,7 @@ interface DropdownProps {
   setSelectedOptions: (k: any) => void;
 
   toggl: () => void;
+  addElem: (k: string) => void;
 }
 
 const Dropdown = ({
@@ -18,8 +19,10 @@ const Dropdown = ({
   selectedOptions,
   setSelectedOptions,
   toggl,
+  addElem,
 }: DropdownProps) => {
   const handleOptionChange = (value: string) => {
+    addElem(value);
     if (selectedOptions.includes(value)) {
       setSelectedOptions(selectedOptions.filter((option) => option !== value));
     } else {
