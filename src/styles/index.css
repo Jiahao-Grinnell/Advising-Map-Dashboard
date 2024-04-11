@@ -11,6 +11,10 @@ body {
   padding-right: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
 .title {
   font-family: "Poppins";
   font-weight: 700;

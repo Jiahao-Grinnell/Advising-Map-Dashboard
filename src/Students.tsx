@@ -71,7 +71,7 @@ const StudentsPage = () => {
       <Grid item xs={12}>
         <Heading
           text={
-            "Add title: Academic Advising Questions Students Seek Answers to (and From Whom)"
+            "Academic Advising Questions Students Seek Answers to (and From Whom)"
           }
         />
       </Grid>

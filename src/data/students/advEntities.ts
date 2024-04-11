@@ -6,7 +6,6 @@ export const advEntitiesNodes = [
   { id: "Coaches and PEAR Staff" },
   { id: "Identity Groups" },
   { id: "Graduate/Professional School" },
-  { id: "Students, Alumni, & Friends " },
   { id: "Office of Diversity, Equity, and Inclusion" },
   { id: "Academic Support & Resources" },
   { id: "Faculty Adviser" },
@@ -21,7 +20,6 @@ export const advEntitiesNodes = [
   { id: "Family" },
   { id: "Academic Department Leadership" },
   { id: "CRSSJ" },
-  { id: "CLS: Exploratory Advisor" },
   { id: "Career Skills (How do I …)" },
   { id: "OCS & Co-Curriculars" },
   { id: "Finding Balance/Personal Needs" },
@@ -30,17 +28,14 @@ export const advEntitiesNodes = [
   { id: "Choosing a Major/Concentration" },
   { id: "Academic Advising" },
   { id: "Board of Trustees" },
-  { id: "Online Resources " },
   { id: "Internships/Gaining Experience" },
   { id: "IGE" },
   { id: "4-Year Planning" },
   { id: "Career Planning" },
-  { id: "CLS: Grant Advisor" },
   { id: "Supervisors" },
   { id: "Professors and Classes" },
   { id: "Accessibility and Disability Resources" },
   { id: "Healthcare Professionals" },
-  { id: "CLS: Pre-Professional Advising" },
 ];
 
 export const advEntitiesLinks = [
@@ -56,17 +51,11 @@ export const advEntitiesLinks = [
   },
   { source: "4-Year Planning", target: "Faculty Adviser", value: 12 },
   { source: "4-Year Planning", target: "Family", value: 1 },
-  { source: "4-Year Planning", target: "Online Resources", value: 5 },
-  { source: "4-Year Planning", target: "Online Resources ", value: 2 },
+  { source: "4-Year Planning", target: "Online Resources", value: 7 },
   {
     source: "4-Year Planning",
     target: "Students, Alumni, & Friends",
-    value: 5,
-  },
-  {
-    source: "4-Year Planning",
-    target: "Students, Alumni, & Friends ",
-    value: 1,
+    value: 6,
   },
   {
     source: "Academic Support & Resources",
@@ -91,7 +80,7 @@ export const advEntitiesLinks = [
   },
   {
     source: "Academic Support & Resources",
-    target: "Online Resources ",
+    target: "Online Resources",
     value: 3,
   },
   {
@@ -101,17 +90,10 @@ export const advEntitiesLinks = [
   },
   {
     source: "Academic Support & Resources",
-    target: "Students, Alumni, & Friends ",
+    target: "Students, Alumni, & Friends",
     value: 6,
   },
-  { source: "Career Planning", target: "CLS", value: 6 },
-  { source: "Career Planning", target: "CLS: Exploratory Advisor", value: 3 },
-  { source: "Career Planning", target: "CLS: Grant Advisor", value: 1 },
-  {
-    source: "Career Planning",
-    target: "CLS: Pre-Professional Advising",
-    value: 8,
-  },
+  { source: "Career Planning", target: "CLS", value: 18 },
   {
     source: "Career Planning",
     target: "Course Instructors & Faculty Mentors",
@@ -119,7 +101,7 @@ export const advEntitiesLinks = [
   },
   { source: "Career Planning", target: "Faculty Adviser", value: 8 },
   { source: "Career Planning", target: "Family", value: 5 },
-  { source: "Career Planning", target: "Online Resources ", value: 2 },
+  { source: "Career Planning", target: "Online Resources", value: 2 },
   {
     source: "Career Planning",
     target: "Students, Alumni, & Friends",
@@ -131,17 +113,7 @@ export const advEntitiesLinks = [
     target: "Academic Advising",
     value: 1,
   },
-  { source: "Career Skills (How do I \u2026)", target: "CLS", value: 9 },
-  {
-    source: "Career Skills (How do I \u2026)",
-    target: "CLS: Exploratory Advisor",
-    value: 2,
-  },
-  {
-    source: "Career Skills (How do I \u2026)",
-    target: "CLS: Pre-Professional Advising",
-    value: 9,
-  },
+  { source: "Career Skills (How do I \u2026)", target: "CLS", value: 11 },
   {
     source: "Career Skills (How do I \u2026)",
     target: "Course Instructors & Faculty Mentors",
@@ -161,22 +133,12 @@ export const advEntitiesLinks = [
   {
     source: "Career Skills (How do I \u2026)",
     target: "Online Resources",
-    value: 5,
-  },
-  {
-    source: "Career Skills (How do I \u2026)",
-    target: "Online Resources ",
-    value: 3,
+    value: 8,
   },
   {
     source: "Career Skills (How do I \u2026)",
     target: "Students, Alumni, & Friends",
-    value: 4,
-  },
-  {
-    source: "Career Skills (How do I \u2026)",
-    target: "Students, Alumni, & Friends ",
-    value: 2,
+    value: 6,
   },
   {
     source: "Choosing a Major/Concentration",
@@ -191,7 +153,7 @@ export const advEntitiesLinks = [
   { source: "Choosing a Major/Concentration", target: "OISA", value: 1 },
   {
     source: "Choosing a Major/Concentration",
-    target: "Online Resources ",
+    target: "Online Resources",
     value: 1,
   },
   {
@@ -201,7 +163,7 @@ export const advEntitiesLinks = [
   },
   {
     source: "Choosing a Major/Concentration",
-    target: "Students, Alumni, & Friends ",
+    target: "Students, Alumni, & Friends",
     value: 1,
   },
   {
@@ -260,22 +222,12 @@ export const advEntitiesLinks = [
   {
     source: "Course Selection & Registration",
     target: "Online Resources",
-    value: 3,
-  },
-  {
-    source: "Course Selection & Registration",
-    target: "Online Resources ",
-    value: 4,
+    value: 7,
   },
   {
     source: "Course Selection & Registration",
     target: "Students, Alumni, & Friends",
-    value: 5,
-  },
-  {
-    source: "Course Selection & Registration",
-    target: "Students, Alumni, & Friends ",
-    value: 2,
+    value: 7,
   },
   {
     source: "Course Selection & Registration",
@@ -330,12 +282,7 @@ export const advEntitiesLinks = [
   {
     source: "Finding Balance/Personal Needs",
     target: "Students, Alumni, & Friends",
-    value: 7,
-  },
-  {
-    source: "Finding Balance/Personal Needs",
-    target: "Students, Alumni, & Friends ",
-    value: 5,
+    value: 12,
   },
   { source: "Finding Balance/Personal Needs", target: "Supervisors", value: 1 },
   {
@@ -343,22 +290,7 @@ export const advEntitiesLinks = [
     target: "Academic Department Leadership",
     value: 1,
   },
-  { source: "Graduate/Professional School", target: "CLS", value: 1 },
-  {
-    source: "Graduate/Professional School",
-    target: "CLS: Exploratory Advisor",
-    value: 1,
-  },
-  {
-    source: "Graduate/Professional School",
-    target: "CLS: Grant Advisor",
-    value: 1,
-  },
-  {
-    source: "Graduate/Professional School",
-    target: "CLS: Pre-Professional Advising",
-    value: 5,
-  },
+  { source: "Graduate/Professional School", target: "CLS", value: 8 },
   {
     source: "Graduate/Professional School",
     target: "Course Instructors & Faculty Mentors",
@@ -372,18 +304,13 @@ export const advEntitiesLinks = [
   { source: "Graduate/Professional School", target: "Family", value: 2 },
   {
     source: "Graduate/Professional School",
-    target: "Online Resources ",
+    target: "Online Resources",
     value: 3,
   },
   {
     source: "Graduate/Professional School",
     target: "Students, Alumni, & Friends",
-    value: 6,
-  },
-  {
-    source: "Graduate/Professional School",
-    target: "Students, Alumni, & Friends ",
-    value: 2,
+    value: 8,
   },
   { source: "Graduate/Professional School", target: "Supervisors", value: 1 },
   {
@@ -414,12 +341,7 @@ export const advEntitiesLinks = [
   {
     source: "Identity-Specific Needs",
     target: "Students, Alumni, & Friends",
-    value: 2,
-  },
-  {
-    source: "Identity-Specific Needs",
-    target: "Students, Alumni, & Friends ",
-    value: 4,
+    value: 6,
   },
   {
     source: "Internships/Gaining Experience",
@@ -431,22 +353,7 @@ export const advEntitiesLinks = [
     target: "Board of Trustees",
     value: 1,
   },
-  { source: "Internships/Gaining Experience", target: "CLS", value: 6 },
-  {
-    source: "Internships/Gaining Experience",
-    target: "CLS: Exploratory Advisor",
-    value: 6,
-  },
-  {
-    source: "Internships/Gaining Experience",
-    target: "CLS: Grant Advisor",
-    value: 1,
-  },
-  {
-    source: "Internships/Gaining Experience",
-    target: "CLS: Pre-Professional Advising",
-    value: 13,
-  },
+  { source: "Internships/Gaining Experience", target: "CLS", value: 26 },
   { source: "Internships/Gaining Experience", target: "CRSSJ", value: 1 },
   {
     source: "Internships/Gaining Experience",
@@ -461,22 +368,12 @@ export const advEntitiesLinks = [
   {
     source: "Internships/Gaining Experience",
     target: "Online Resources",
-    value: 3,
-  },
-  {
-    source: "Internships/Gaining Experience",
-    target: "Online Resources ",
-    value: 3,
+    value: 6,
   },
   {
     source: "Internships/Gaining Experience",
     target: "Students, Alumni, & Friends",
-    value: 1,
-  },
-  {
-    source: "Internships/Gaining Experience",
-    target: "Students, Alumni, & Friends ",
-    value: 6,
+    value: 7,
   },
   {
     source: "MAPs & Independent Study",
@@ -489,19 +386,13 @@ export const advEntitiesLinks = [
     value: 7,
   },
   { source: "MAPs & Independent Study", target: "Faculty Adviser", value: 12 },
-  { source: "MAPs & Independent Study", target: "Online Resources ", value: 1 },
+  { source: "MAPs & Independent Study", target: "Online Resources", value: 1 },
   {
     source: "MAPs & Independent Study",
-    target: "Students, Alumni, & Friends ",
+    target: "Students, Alumni, & Friends",
     value: 7,
   },
-  { source: "OCS & Co-Curriculars", target: "CLS", value: 2 },
-  { source: "OCS & Co-Curriculars", target: "CLS: Grant Advisor", value: 1 },
-  {
-    source: "OCS & Co-Curriculars",
-    target: "CLS: Pre-Professional Advising",
-    value: 2,
-  },
+  { source: "OCS & Co-Curriculars", target: "CLS", value: 5 },
   {
     source: "OCS & Co-Curriculars",
     target: "Coaches and PEAR Staff",
@@ -519,12 +410,7 @@ export const advEntitiesLinks = [
   {
     source: "OCS & Co-Curriculars",
     target: "Students, Alumni, & Friends",
-    value: 1,
-  },
-  {
-    source: "OCS & Co-Curriculars",
-    target: "Students, Alumni, & Friends ",
-    value: 1,
+    value: 2,
   },
   { source: "Professors and Classes", target: "Academic Advising", value: 1 },
   { source: "Professors and Classes", target: "CLS", value: 1 },
@@ -539,33 +425,27 @@ export const advEntitiesLinks = [
     target: "Office of Diversity, Equity, and Inclusion",
     value: 1,
   },
-  { source: "Professors and Classes", target: "Online Resources", value: 3 },
-  { source: "Professors and Classes", target: "Online Resources ", value: 8 },
+  { source: "Professors and Classes", target: "Online Resources", value: 11 },
   { source: "Professors and Classes", target: "Student Leaders", value: 1 },
   {
     source: "Professors and Classes",
     target: "Students, Alumni, & Friends",
-    value: 17,
-  },
-  {
-    source: "Professors and Classes",
-    target: "Students, Alumni, & Friends ",
-    value: 8,
+    value: 25,
   },
 ];
 
 export const advEntitiesOptions = [
-  { id: "Course Selection & Registration" },
-  { id: "Career Skills (How do I …)" },
   { id: "4-Year Planning" },
-  { id: "Career Planning" },
-  { id: "Graduate/Professional School" },
-  { id: "Choosing a Major/Concentration" },
-  { id: "Finding Balance/Personal Needs" },
-  { id: "Identity-Specific Needs" },
-  { id: "Internships/Gaining Experience" },
   { id: "Professors and Classes" },
+  { id: "Course Selection & Registration" },
+  { id: "Choosing a Major/Concentration" },
   { id: "OCS & Co-Curriculars" },
-  { id: "Academic Support & Resources" },
   { id: "MAPs & Independent Study" },
+  { id: "Career Planning" },
+  { id: "Career Skills (How do I …)" },
+  { id: "Internships/Gaining Experience" },
+  { id: "Graduate/Professional School" },
+  { id: "Academic Support & Resources" },
+  { id: "Identity-Specific Needs" },
+  { id: "Finding Balance/Personal Needs" },
 ];
