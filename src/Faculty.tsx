@@ -52,26 +52,38 @@ const FacultyPage = () => {
         <Heading text={"Faculty Advising Input"} />
       </Grid>
       <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
-        <PieChartNivo title={"Assets Pie Chart"} data={assetPie} />
-      </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
-        <BubbleChartNivo title={"Assets Bubble Chart"} data={assetBubble} />
-      </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
-        <PieChartNivo title={"Stewards Pie Chart"} data={stewardsPie} />
+        <PieChartNivo
+          title={"Assets (as Identified by Faculty)"}
+          data={assetPie}
+        />
       </Grid>
       <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
         <BubbleChartNivo
-          title={"Stewards Bubble Chart"}
+          title={"Assets (as Identified by Faculty)"}
+          data={assetBubble}
+        />
+      </Grid>
+      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+        <PieChartNivo
+          title={"Stewards (as Identified by Faculty)"}
+          data={stewardsPie}
+        />
+      </Grid>
+      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+        <BubbleChartNivo
+          title={"Stewards (as Identified by Faculty)"}
           data={stewardsBubble}
         />
       </Grid>
       <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
-        <PieChartNivo title={"Champion Pie Chart"} data={championPie} />
+        <PieChartNivo
+          title={"Champion (as Identified by Faculty)"}
+          data={championPie}
+        />
       </Grid>
       <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
         <BubbleChartNivo
-          title={"Champion Bubble Chart"}
+          title={"Champion (as Identified by Faculty)"}
           data={championBubble}
         />
       </Grid>

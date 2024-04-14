@@ -15,17 +15,17 @@ import pandas
 # df.columns = ["source", "target", "value"]
 # print(df.to_json(orient="records"))
 
-df = pandas.read_csv("data/data.csv", sep="\t")[["s", "n"]]
-df["id"] = df["s"]
-df.columns = ["label", "value", "id"]
+# df = pandas.read_csv("data/data.csv", sep="\t")[["s", "n"]]
+# df["id"] = df["s"]
+# df.columns = ["label", "value", "id"]
 
-print(df.to_json(orient="records"))
+# print(df.to_json(orient="records"))
 
 # df = pandas.read_csv("data/data.csv", sep="\t")
 # df = df.groupby(["e", "s"]).sum()
-# df=df.reset_index()
+# df = df.reset_index()
 
-# Creating a nested dictionary
+# # Creating a nested dictionary
 # data = {"name": "root", "children": []}
 
 # # Looping through the DataFrame to populate the dictionary
@@ -40,3 +40,10 @@ print(df.to_json(orient="records"))
 #         data["children"].append({"name": e, "children": [{"name": s, "value": value}]})
 
 # print(data)
+
+
+# themes = """Financial literacy: 1, Testing services/proctoring: 1, Development Opportunities for Students: 1, Workforce preparation vs PhD/post-grad: 1, Responsibility: 1, Accountability: 1, Demonstrated expertise: 1"""
+# l = []
+# for theme in themes.split(", "):
+#     l.append(theme.split(": ")[0])
+# print(l)

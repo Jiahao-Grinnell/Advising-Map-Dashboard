@@ -1,6 +1,15 @@
 import { ResponsiveCirclePacking } from "@nivo/circle-packing";
 
 const BubbleChartNivo = ({ title, data }) => {
+  const TooltipComponent = (datum) => (
+    <div style={{ backgroundColor: "#333", padding: "8px" }}>
+      <strong style={{ color: "white" }}>
+        {datum.id}
+        {/* : {datum.value}% */}
+      </strong>
+    </div>
+  );
+
   return (
     <>
       <h2 className="title">{title}</h2>
@@ -9,7 +18,7 @@ const BubbleChartNivo = ({ title, data }) => {
         margin={{ top: 40, right: 115, bottom: 80, left: 115 }}
         id="name"
         value="value"
-        colors={{ scheme: "accent" }}
+        colors={{ scheme: "category10" }}
         childColor={{
           from: "color",
           modifiers: [["brighter", 0.4]],
@@ -27,6 +36,7 @@ const BubbleChartNivo = ({ title, data }) => {
           from: "color",
           modifiers: [["darker", 0.5]],
         }}
+        tooltip={TooltipComponent}
       />
     </>
   );

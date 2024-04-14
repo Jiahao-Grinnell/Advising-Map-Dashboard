@@ -4,7 +4,8 @@ const PieChartNivo = ({ title, data, onClick = (_) => {} }) => {
   const TooltipComponent = ({ datum }) => (
     <div style={{ backgroundColor: "#333", padding: "8px" }}>
       <strong style={{ color: "white" }}>
-        {datum.label}: {datum.value}%
+        {datum.label}
+        {/* : {datum.value}% */}
       </strong>
     </div>
   );

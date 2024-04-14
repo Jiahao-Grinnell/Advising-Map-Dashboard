@@ -6,17 +6,7 @@ import FacultyPage from "./Faculty";
 import StaffPage from "./Staff";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { makeStyles } from "@mui/styles";
 import Toolbar from "./components/Toolbar";
-
-const useStyles = makeStyles((theme: any) => ({
-  graphContainer: {
-    width: "100%",
-    height: "100%",
-    padding: 2,
-    boxSizing: "border-box",
-  },
-}));
 
 const App: React.FC = () => {
   return (
