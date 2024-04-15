@@ -15,11 +15,14 @@ import pandas
 # df.columns = ["source", "target", "value"]
 # print(df.to_json(orient="records"))
 
-# df = pandas.read_csv("data/data.csv", sep="\t")[["s", "n"]]
-# df["id"] = df["s"]
-# df.columns = ["label", "value", "id"]
+df = pandas.read_csv("data/data.csv", sep="\t")[["s", "n"]]
+df = df.groupby("s").sum()
+df = df.reset_index()
+df = df.sort_values(by=["n"], ascending=False)
+df["id"] = df["s"]
+df.columns = ["label", "value", "id"]
 
-# print(df.to_json(orient="records"))
+print((df.to_json(orient="records")))
 
 # df = pandas.read_csv("data/data.csv", sep="\t")
 # df = df.groupby(["e", "s"]).sum()
@@ -42,8 +45,9 @@ import pandas
 # print(data)
 
 
-# themes = """Financial literacy: 1, Testing services/proctoring: 1, Development Opportunities for Students: 1, Workforce preparation vs PhD/post-grad: 1, Responsibility: 1, Accountability: 1, Demonstrated expertise: 1"""
-# l = []
-# for theme in themes.split(", "):
-#     l.append(theme.split(": ")[0])
-# print(l)
+# with open("data/data.csv", "r") as f:
+#     for themes in f.readlines():
+#         l = []
+#         for theme in themes.split(", "):
+#             l.append(theme.split(": ")[0])
+#         print(l)
