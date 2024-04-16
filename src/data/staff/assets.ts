@@ -51,83 +51,80 @@ export const assetPie = [
 export const assetBubble = {
   name: "Assets",
   children: [
-    { name: "Alicia Stanley", children: [{ name: "IGE", value: 1 }] },
-    { name: "Ann Landstrom", children: [{ name: "CLS", value: 1 }] },
     {
-      name: "Autumn Wilke",
-      children: [{ name: "Accessibility and Disability Resources", value: 3 }],
+      name: "Academic Advising",
+      children: [
+        { name: "Belinda Backous", value: 3 },
+        { name: "Joyce Stern", value: 5 },
+        { name: "Kate Ferraro", value: 3 },
+      ],
     },
     {
-      name: "Belinda Backous",
-      children: [{ name: "Academic Advising", value: 3 }],
+      name: "Academic Resources",
+      children: [
+        { name: "Mathlab", value: 1 },
+        { name: "Science Learning Center", value: 1 },
+        { name: "Writing Center", value: 2 },
+      ],
     },
     {
-      name: "Ben Newhouse",
-      children: [{ name: "Student Resources", value: 1 }],
-    },
-    { name: "Brenda Strong", children: [{ name: "OISA", value: 2 }] },
-    { name: "Brigittine French", children: [{ name: "IGE", value: 1 }] },
-    {
-      name: "Catherine Ashton",
-      children: [{ name: "Registrar's Office", value: 1 }],
+      name: "Accessibility and Disability Resources",
+      children: [
+        { name: "Autumn Wilke", value: 3 },
+        { name: "Emily Fenner", value: 1 },
+        { name: "Jae Baldree", value: 2 },
+      ],
     },
     {
-      name: "Course Mentors/Tutors",
-      children: [{ name: "Student Resources", value: 1 }],
+      name: "CLS",
+      children: [
+        { name: "Ann Landstrom", value: 1 },
+        { name: "Laura Poole", value: 1 },
+        { name: "Sarah Barks", value: 1 },
+      ],
     },
-    { name: "DLAC", children: [{ name: "Friends and Colleagues", value: 1 }] },
-    { name: "Department Liaison", children: [{ name: "IGE", value: 1 }] },
+    { name: "Financial Aid", children: [{ name: "Steph Haines", value: 1 }] },
     {
-      name: "Emily Fenner",
-      children: [{ name: "Accessibility and Disability Resources", value: 1 }],
-    },
-    { name: "Emily Perry", children: [{ name: "OISA", value: 1 }] },
-    { name: "ICA", children: [{ name: "Student Resources", value: 1 }] },
-    {
-      name: "Jae Baldree",
-      children: [{ name: "Accessibility and Disability Resources", value: 2 }],
-    },
-    {
-      name: "Joyce Stern",
-      children: [{ name: "Academic Advising", value: 5 }],
-    },
-    { name: "Karen Edwards", children: [{ name: "OISA", value: 2 }] },
-    {
-      name: "Kate Ferraro",
-      children: [{ name: "Academic Advising", value: 3 }],
-    },
-    { name: "Kate Patch", children: [{ name: "IGE", value: 1 }] },
-    { name: "Laura Poole", children: [{ name: "CLS", value: 1 }] },
-    {
-      name: "Library",
-      children: [{ name: "Friends and Colleagues", value: 1 }],
-    },
-    { name: "Mathlab", children: [{ name: "Academic Resources", value: 1 }] },
-    {
-      name: "Megan Baldree",
-      children: [{ name: "Student Resources", value: 4 }],
+      name: "Friends and Colleagues",
+      children: [
+        { name: "DLAC", value: 1 },
+        { name: "Library", value: 1 },
+      ],
     },
     {
-      name: "Nancy Guiane",
-      children: [{ name: "Student Resources", value: 1 }],
+      name: "IGE",
+      children: [
+        { name: "Alicia Stanley", value: 1 },
+        { name: "Brigittine French", value: 1 },
+        { name: "Department Liaison", value: 1 },
+        { name: "Kate Patch", value: 1 },
+      ],
     },
     {
-      name: "Residence Life",
-      children: [{ name: "Student Resources", value: 1 }],
-    },
-    { name: "Sarah Barks", children: [{ name: "CLS", value: 1 }] },
-    {
-      name: "Science Learning Center",
-      children: [{ name: "Academic Resources", value: 1 }],
-    },
-    { name: "Steph Haines", children: [{ name: "Financial Aid", value: 1 }] },
-    {
-      name: "Vickie Rutherford",
-      children: [{ name: "Registrar's Office", value: 2 }],
+      name: "OISA",
+      children: [
+        { name: "Brenda Strong", value: 2 },
+        { name: "Emily Perry", value: 1 },
+        { name: "Karen Edwards", value: 2 },
+      ],
     },
     {
-      name: "Writing Center",
-      children: [{ name: "Academic Resources", value: 2 }],
+      name: "Registrar's Office",
+      children: [
+        { name: "Catherine Ashton", value: 1 },
+        { name: "Vickie Rutherford", value: 2 },
+      ],
+    },
+    {
+      name: "Student Resources",
+      children: [
+        { name: "Ben Newhouse", value: 1 },
+        { name: "Course Mentors/Tutors", value: 1 },
+        { name: "ICA", value: 1 },
+        { name: "Megan Baldree", value: 4 },
+        { name: "Nancy Guiane", value: 1 },
+        { name: "Residence Life", value: 1 },
+      ],
     },
   ],
 };

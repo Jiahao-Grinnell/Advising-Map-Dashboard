@@ -18,12 +18,12 @@ const BubbleChartNivo = ({ title, data }) => {
         margin={{ top: 40, right: 115, bottom: 80, left: 115 }}
         id="name"
         value="value"
-        colors={{ scheme: "category10" }}
+        colors={{ scheme: "accent" }}
         childColor={{
           from: "color",
           modifiers: [["brighter", 0.4]],
         }}
-        padding={50}
+        padding={40}
         enableLabels={true}
         labelsFilter={(n) => 1 === n.node.depth}
         labelsSkipRadius={0}

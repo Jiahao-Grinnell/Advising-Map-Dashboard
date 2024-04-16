@@ -49,33 +49,31 @@ export const stewardsBubble = {
   name: "Stewards",
   children: [
     {
-      name: "Belinda Backous",
-      children: [{ name: "Academic Advising", value: 1 }],
+      name: "Academic Advising",
+      children: [
+        { name: "Belinda Backous", value: 1 },
+        { name: "Kate Ferraro", value: 1 },
+      ],
+    },
+    { name: "Dean's Office", children: [{ name: "Tim Arner", value: 1 }] },
+    {
+      name: "Grinnell Science Project",
+      children: [{ name: "GSP Organizers", value: 1 }],
     },
     {
-      name: "GSP Organizers",
-      children: [{ name: "Grinnell Science Project", value: 1 }],
+      name: "Registrar's Office",
+      children: [
+        { name: "Tammy Whitney", value: 1 },
+        { name: "Vickie Rutherford", value: 1 },
+      ],
     },
     {
-      name: "Kate Ferraro",
-      children: [{ name: "Academic Advising", value: 1 }],
+      name: "Student Affairs",
+      children: [{ name: "NSO Organizers", value: 1 }],
     },
     {
-      name: "NSO Organizers",
-      children: [{ name: "Student Affairs", value: 1 }],
-    },
-    {
-      name: "Tammy Whitney",
-      children: [{ name: "Registrar's Office", value: 1 }],
-    },
-    {
-      name: "The President",
-      children: [{ name: "The President's Office", value: 1 }],
-    },
-    { name: "Tim Arner", children: [{ name: "Dean's Office", value: 1 }] },
-    {
-      name: "Vickie Rutherford",
-      children: [{ name: "Registrar's Office", value: 1 }],
+      name: "The President's Office",
+      children: [{ name: "The President", value: 1 }],
     },
   ],
 };

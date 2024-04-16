@@ -33,58 +33,50 @@ export const championPie = [
 export const championBubble = {
   name: "Champions",
   children: [
-    { name: "Ann Landstrom", children: [{ name: "CLS", value: 1 }] },
     {
-      name: "Assistive Technology",
-      children: [{ name: "Accessibility and Disability Resources", value: 1 }],
+      name: "Academic Advising",
+      children: [
+        { name: "Belinda Backous", value: 2 },
+        { name: "Joyce Stern", value: 5 },
+        { name: "Kate Ferraro", value: 2 },
+      ],
     },
     {
-      name: "Autumn Wilke",
-      children: [{ name: "Accessibility and Disability Resources", value: 2 }],
+      name: "Accessibility and Disability Resources",
+      children: [
+        { name: "Assistive Technology", value: 1 },
+        { name: "Autumn Wilke", value: 2 },
+      ],
     },
     {
-      name: "Belinda Backous",
-      children: [{ name: "Academic Advising", value: 2 }],
+      name: "CLS",
+      children: [
+        { name: "Ann Landstrom", value: 1 },
+        { name: "Mark Peltz", value: 1 },
+      ],
     },
     {
-      name: "Beronda Montgomery",
-      children: [{ name: "Dean's Office", value: 1 }],
+      name: "Dean's Office",
+      children: [
+        { name: "Beronda Montgomery", value: 1 },
+        { name: "Tutorial and Advising Committee", value: 1 },
+      ],
     },
     {
-      name: "Caleb Elfenbein",
-      children: [{ name: "Faculty/Coaches", value: 1 }],
-    },
-    { name: "Holly Roepke", children: [{ name: "Faculty/Coaches", value: 1 }] },
-    {
-      name: "Jani Springer",
-      children: [{ name: "Faculty/Coaches", value: 1 }],
-    },
-    {
-      name: "Joyce Stern",
-      children: [{ name: "Academic Advising", value: 5 }],
-    },
-    {
-      name: "Kate Ferraro",
-      children: [{ name: "Academic Advising", value: 2 }],
+      name: "Faculty/Coaches",
+      children: [
+        { name: "Caleb Elfenbein", value: 1 },
+        { name: "Holly Roepke", value: 1 },
+        { name: "Jani Springer", value: 1 },
+        { name: "Mark Christel", value: 1 },
+        { name: "Mo Pelzel", value: 1 },
+        { name: "Sam Rebelsky", value: 1 },
+        { name: "Sarah Purcell", value: 1 },
+      ],
     },
     {
-      name: "Mark Christel",
-      children: [{ name: "Faculty/Coaches", value: 1 }],
-    },
-    { name: "Mark Peltz", children: [{ name: "CLS", value: 1 }] },
-    {
-      name: "Megan Baldree",
-      children: [{ name: "Student Affairs", value: 3 }],
-    },
-    { name: "Mo Pelzel", children: [{ name: "Faculty/Coaches", value: 1 }] },
-    { name: "Sam Rebelsky", children: [{ name: "Faculty/Coaches", value: 1 }] },
-    {
-      name: "Sarah Purcell",
-      children: [{ name: "Faculty/Coaches", value: 1 }],
-    },
-    {
-      name: "Tutorial and Advising Committee",
-      children: [{ name: "Dean's Office", value: 1 }],
+      name: "Student Affairs",
+      children: [{ name: "Megan Baldree", value: 3 }],
     },
   ],
 };

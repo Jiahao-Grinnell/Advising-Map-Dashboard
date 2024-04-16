@@ -31,11 +31,16 @@ export const stewardsPie = [
 export const stewardsBubble = {
   name: "Stewards",
   children: [
-    { name: "Kelly Harris", children: [{ name: "CLS", value: 1 }] },
-    { name: "Mark Peltz", children: [{ name: "CLS", value: 2 }] },
     {
-      name: "Tutorial and Advising Committee",
-      children: [{ name: "Dean's Office", value: 1 }],
+      name: "CLS",
+      children: [
+        { name: "Kelly Harris", value: 1 },
+        { name: "Mark Peltz", value: 2 },
+      ],
+    },
+    {
+      name: "Dean's Office",
+      children: [{ name: "Tutorial and Advising Committee", value: 1 }],
     },
   ],
 };

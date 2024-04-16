@@ -37,79 +37,61 @@ export const assetPie = [
 ];
 
 export const assetBubble = {
-  name: "Assets",
+  name: "root",
   children: [
     {
-      name: "Autumn Wilke",
-      children: [{ name: "Accessibility and Disability Resources", value: 1 }],
+      name: "Academic Advising",
+      children: [
+        { name: "Belinda Bacous", value: 2 },
+        { name: "Joyce Stern", value: 7 },
+        { name: "Kate Ferraro", value: 1 },
+      ],
     },
     {
-      name: "Belinda Bacous",
-      children: [{ name: "Academic Advising", value: 2 }],
-    },
-    { name: "CTLA", children: [{ name: "Academic Resources", value: 1 }] },
-    {
-      name: "Catherine Ashton",
-      children: [{ name: "Registrar's Office", value: 1 }],
-    },
-    { name: "External", children: [{ name: "Online Resources", value: 3 }] },
-    {
-      name: "Grinnell Database",
-      children: [{ name: "Online Resources", value: 9 }],
+      name: "Academic Resources",
+      children: [
+        { name: "CTLA", value: 1 },
+        { name: "Math Lab", value: 1 },
+        { name: "Reading and Writing Center", value: 1 },
+        { name: "Science Learning Center", value: 3 },
+        { name: "Writing Lab", value: 2 },
+        { name: "Writing Mentor", value: 1 },
+      ],
     },
     {
-      name: "Grinnell Website",
-      children: [{ name: "Online Resources", value: 6 }],
+      name: "Accessibility and Disability Resources",
+      children: [
+        { name: "Autumn Wilke", value: 1 },
+        { name: "Jae Baldree", value: 1 },
+      ],
+    },
+    { name: "CLS", children: [{ name: "Mary Jane Shroyer", value: 1 }] },
+    {
+      name: "Friends and Colleagues",
+      children: [
+        { name: "Peter Hanson, Jim Swartz, and David Harrison", value: 3 },
+      ],
     },
     {
-      name: "Jae Baldree",
-      children: [{ name: "Accessibility and Disability Resources", value: 1 }],
+      name: "Online Resources",
+      children: [
+        { name: "External", value: 3 },
+        { name: "Grinnell Database", value: 9 },
+        { name: "Grinnell Website", value: 6 },
+      ],
     },
     {
-      name: "Joyce Stern",
-      children: [{ name: "Academic Advising", value: 7 }],
+      name: "Registrar's Office",
+      children: [
+        { name: "Catherine Ashton", value: 1 },
+        { name: "LuAnn Wheeler", value: 1 },
+        { name: "Tammy Whitney", value: 1 },
+        { name: "Vickie Rutherford", value: 1 },
+      ],
     },
     {
-      name: "Kate Ferraro",
-      children: [{ name: "Academic Advising", value: 1 }],
-    },
-    {
-      name: "LuAnn Wheeler",
-      children: [{ name: "Registrar's Office", value: 1 }],
-    },
-    { name: "Mary Jane Shroyer", children: [{ name: "CLS", value: 1 }] },
-    { name: "Math Lab", children: [{ name: "Academic Resources", value: 1 }] },
-    {
-      name: "Megan Baldree",
-      children: [{ name: "Student Resources", value: 1 }],
-    },
-    {
-      name: "Peter Hanson, Jim Swartz, and David Harrison",
-      children: [{ name: "Friends and Colleagues", value: 3 }],
-    },
-    {
-      name: "Reading and Writing Center",
-      children: [{ name: "Academic Resources", value: 1 }],
-    },
-    {
-      name: "Science Learning Center",
-      children: [{ name: "Academic Resources", value: 3 }],
-    },
-    {
-      name: "Tammy Whitney",
-      children: [{ name: "Registrar's Office", value: 1 }],
-    },
-    {
-      name: "Vickie Rutherford",
-      children: [{ name: "Registrar's Office", value: 1 }],
-    },
-    {
-      name: "Writing Lab",
-      children: [{ name: "Academic Resources", value: 2 }],
-    },
-    {
-      name: "Writing Mentor",
-      children: [{ name: "Academic Resources", value: 1 }],
+      name: "Student Resources",
+      children: [{ name: "Megan Baldree", value: 1 }],
     },
   ],
 };
