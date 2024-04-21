@@ -53,27 +53,71 @@ export const stewardsBubble = {
       children: [
         { name: "Belinda Backous", value: 1 },
         { name: "Kate Ferraro", value: 1 },
+        { name: "Others", value: 10 },
       ],
     },
-    { name: "Dean's Office", children: [{ name: "Tim Arner", value: 1 }] },
+    {
+      name: "Academic Resource Centers",
+      children: [{ name: "Others", value: 1 }],
+    },
+    { name: "Board of Trustees", children: [{ name: "Others", value: 1 }] },
+    { name: "Budget Committee", children: [{ name: "Others", value: 1 }] },
+    { name: "CLS", children: [{ name: "Others", value: 11 }] },
+    { name: "CTLA", children: [{ name: "Others", value: 3 }] },
+    { name: "Center for Humanities", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Dean's Office",
+      children: [
+        { name: "Others", value: 10 },
+        { name: "Tim Arner", value: 1 },
+      ],
+    },
+    { name: "Executive Council", children: [{ name: "Others", value: 1 }] },
+    { name: "Faculty Workshops", children: [{ name: "Others", value: 1 }] },
+    { name: "Faculty/Coaches", children: [{ name: "Others", value: 2 }] },
     {
       name: "Grinnell Science Project",
       children: [{ name: "GSP Organizers", value: 1 }],
     },
+    { name: "IGE", children: [{ name: "Others", value: 2 }] },
+    {
+      name: "Institute for Global Engagement",
+      children: [{ name: "Others", value: 1 }],
+    },
+    {
+      name: "Instructional Support Committee",
+      children: [{ name: "Others", value: 1 }],
+    },
+    { name: "MAP Program", children: [{ name: "Others", value: 1 }] },
+    { name: "OISA", children: [{ name: "Others", value: 1 }] },
     {
       name: "Registrar's Office",
       children: [
+        { name: "Others", value: 8 },
         { name: "Tammy Whitney", value: 1 },
         { name: "Vickie Rutherford", value: 1 },
       ],
     },
     {
+      name: "Science Learning Center",
+      children: [{ name: "Others", value: 1 }],
+    },
+    {
       name: "Student Affairs",
-      children: [{ name: "NSO Organizers", value: 1 }],
+      children: [
+        { name: "NSO Organizers", value: 1 },
+        { name: "Others", value: 3 },
+      ],
     },
     {
       name: "The President's Office",
       children: [{ name: "The President", value: 1 }],
     },
+    {
+      name: "Tutorial and Advising Committee",
+      children: [{ name: "Others", value: 5 }],
+    },
+    { name: "Uncertain", children: [{ name: "Others", value: 6 }] },
+    { name: "Wilson Center", children: [{ name: "Others", value: 2 }] },
   ],
 };

@@ -25,6 +25,7 @@ import pandas
 # print((df.to_json(orient="records")))
 
 df = pandas.read_csv("data/data.csv", sep="\t")
+df = df.fillna("Others")
 df = df.groupby(["e", "s"]).sum()
 df = df.reset_index()
 
@@ -41,9 +42,7 @@ for e, s, value in zip(df["e"], df["s"], df["n"]):
             break
     if not e_exists:
         data["children"].append({"name": e, "children": [{"name": s, "value": value}]})
-
 print(data)
-
 
 # with open("data/data.csv", "r") as f:
 #     for themes in f.readlines():

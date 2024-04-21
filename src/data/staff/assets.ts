@@ -54,17 +54,29 @@ export const assetBubble = {
     {
       name: "Academic Advising",
       children: [
+        { name: "Academic Success Team", value: 1 },
         { name: "Belinda Backous", value: 3 },
         { name: "Joyce Stern", value: 5 },
         { name: "Kate Ferraro", value: 3 },
+        { name: "Others", value: 20 },
       ],
     },
+    { name: "Academic Assistants", children: [{ name: "Others", value: 2 }] },
+    {
+      name: "Academic Department Leadership",
+      children: [{ name: "Others", value: 1 }],
+    },
+    { name: "Academic Departments", children: [{ name: "Others", value: 2 }] },
     {
       name: "Academic Resources",
       children: [
-        { name: "Mathlab", value: 1 },
+        { name: "Course Mentors/Tutors", value: 1 },
+        { name: "HPAC", value: 1 },
+        { name: "Math Lab", value: 1 },
+        { name: "Others", value: 5 },
         { name: "Science Learning Center", value: 1 },
-        { name: "Writing Center", value: 2 },
+        { name: "Wilson/Rosenfield Programs", value: 2 },
+        { name: "Writing, Reading, & Speaking Center", value: 2 },
       ],
     },
     {
@@ -73,17 +85,64 @@ export const assetBubble = {
         { name: "Autumn Wilke", value: 3 },
         { name: "Emily Fenner", value: 1 },
         { name: "Jae Baldree", value: 2 },
+        { name: "Others", value: 9 },
       ],
     },
+    {
+      name: "Admission, Financial Aid, and Student Accounts",
+      children: [
+        { name: "Admission", value: 1 },
+        { name: "Others", value: 1 },
+        { name: "Steph Haines", value: 1 },
+      ],
+    },
+    { name: "Alumni", children: [{ name: "Others", value: 3 }] },
     {
       name: "CLS",
       children: [
         { name: "Ann Landstrom", value: 1 },
         { name: "Laura Poole", value: 1 },
+        { name: "Others", value: 12 },
         { name: "Sarah Barks", value: 1 },
       ],
     },
-    { name: "Financial Aid", children: [{ name: "Steph Haines", value: 1 }] },
+    { name: "CRSSJ", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Coaches and PEAR Staff",
+      children: [{ name: "Others", value: 1 }],
+    },
+    {
+      name: "Committees",
+      children: [
+        { name: "CAS", value: 1 },
+        { name: "Tutorial and Advising Committee", value: 1 },
+      ],
+    },
+    {
+      name: "Community Partnerships, Planning, & Research",
+      children: [{ name: "Others", value: 1 }],
+    },
+    { name: "DAR", children: [{ name: "Others", value: 3 }] },
+    {
+      name: "External Resources",
+      children: [
+        { name: "Fellowship Foundations & Organizations", value: 1 },
+        { name: "Local Healthcare Providers", value: 2 },
+        { name: "Others", value: 4 },
+        { name: "Professional Resources", value: 1 },
+      ],
+    },
+    { name: "FM", children: [{ name: "Others", value: 1 }] },
+    { name: "FYE Course", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Faculty",
+      children: [
+        { name: "Others", value: 16 },
+        { name: "Scholarship Selection Committee Members", value: 1 },
+      ],
+    },
+    { name: "Faculty ", children: [{ name: "Others", value: 1 }] },
+    { name: "Financial Aid", children: [{ name: "Others", value: 2 }] },
     {
       name: "Friends and Colleagues",
       children: [
@@ -92,12 +151,29 @@ export const assetBubble = {
       ],
     },
     {
+      name: "Higher Administration",
+      children: [
+        { name: "Associate Dean", value: 1 },
+        { name: "Dean's Office", value: 3 },
+      ],
+    },
+    {
       name: "IGE",
       children: [
         { name: "Alicia Stanley", value: 1 },
         { name: "Brigittine French", value: 1 },
-        { name: "Department Liaison", value: 1 },
         { name: "Kate Patch", value: 1 },
+        { name: "OCS", value: 5 },
+        { name: "Others", value: 6 },
+      ],
+    },
+    { name: "Library", children: [{ name: "Others", value: 1 }] },
+    { name: "Museum", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "ODEI",
+      children: [
+        { name: "ICA", value: 1 },
+        { name: "SRC Liaison", value: 1 },
       ],
     },
     {
@@ -106,25 +182,34 @@ export const assetBubble = {
         { name: "Brenda Strong", value: 2 },
         { name: "Emily Perry", value: 1 },
         { name: "Karen Edwards", value: 2 },
+        { name: "Others", value: 9 },
       ],
     },
+    { name: "Ombuds", children: [{ name: "Others", value: 1 }] },
     {
       name: "Registrar's Office",
       children: [
         { name: "Catherine Ashton", value: 1 },
+        { name: "Others", value: 12 },
         { name: "Vickie Rutherford", value: 2 },
+      ],
+    },
+    { name: "SHAW", children: [{ name: "Others", value: 4 }] },
+    {
+      name: "Student Affairs",
+      children: [
+        { name: "Campus Safety", value: 1 },
+        { name: "Care Team", value: 1 },
+        { name: "Dean of Students", value: 1 },
+        { name: "Megan Baldree", value: 5 },
+        { name: "Nancy Guinane", value: 1 },
+        { name: "Others", value: 4 },
+        { name: "Residence Life", value: 1 },
       ],
     },
     {
       name: "Student Resources",
-      children: [
-        { name: "Ben Newhouse", value: 1 },
-        { name: "Course Mentors/Tutors", value: 1 },
-        { name: "ICA", value: 1 },
-        { name: "Megan Baldree", value: 4 },
-        { name: "Nancy Guiane", value: 1 },
-        { name: "Residence Life", value: 1 },
-      ],
+      children: [{ name: "Ben Newhouse", value: 1 }],
     },
   ],
 };

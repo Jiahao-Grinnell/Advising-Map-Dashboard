@@ -31,16 +31,44 @@ export const stewardsPie = [
 export const stewardsBubble = {
   name: "Stewards",
   children: [
+    { name: "Academic Advising", children: [{ name: "Others", value: 2 }] },
+    { name: "Academic Departments", children: [{ name: "Others", value: 1 }] },
+    { name: "Academic Resources", children: [{ name: "Others", value: 1 }] },
+    { name: "Board of Trustees", children: [{ name: "Others", value: 1 }] },
     {
       name: "CLS",
       children: [
         { name: "Kelly Harris", value: 1 },
         { name: "Mark Peltz", value: 2 },
+        { name: "Others", value: 5 },
       ],
     },
+    { name: "CRSSJ", children: [{ name: "Others", value: 1 }] },
+    { name: "CTLA", children: [{ name: "Others", value: 1 }] },
+    { name: "DAR", children: [{ name: "Others", value: 2 }] },
+    { name: "DSA", children: [{ name: "Others", value: 2 }] },
     {
       name: "Dean's Office",
-      children: [{ name: "Tutorial and Advising Committee", value: 1 }],
+      children: [
+        { name: "Others", value: 5 },
+        { name: "Tutorial and Advising Committee", value: 1 },
+      ],
     },
+    { name: "Facilities Management", children: [{ name: "Others", value: 1 }] },
+    { name: "Faculty/Coaches", children: [{ name: "Others", value: 5 }] },
+    { name: "Financial Aid", children: [{ name: "Others", value: 3 }] },
+    {
+      name: "Humanities and Social Sciences Center",
+      children: [{ name: "Others", value: 1 }],
+    },
+    { name: "Library", children: [{ name: "Others", value: 1 }] },
+    { name: "ODEI", children: [{ name: "Others", value: 1 }] },
+    { name: "OISA", children: [{ name: "Others", value: 2 }] },
+    { name: "Registrar's Office", children: [{ name: "Others", value: 3 }] },
+    { name: "Rosenfield Program", children: [{ name: "Others", value: 3 }] },
+    { name: "SHAW", children: [{ name: "Others", value: 1 }] },
+    { name: "Senior Leadership", children: [{ name: "Others", value: 1 }] },
+    { name: "Uncertain", children: [{ name: "Others", value: 2 }] },
+    { name: "Wilson Program", children: [{ name: "Others", value: 3 }] },
   ],
 };

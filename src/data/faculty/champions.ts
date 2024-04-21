@@ -31,6 +31,7 @@ export const championBubble = {
         { name: "Belinda Backous", value: 7 },
         { name: "Joyce Stern", value: 20 },
         { name: "Kate Ferraro", value: 2 },
+        { name: "Others", value: 12 },
       ],
     },
     {
@@ -38,15 +39,23 @@ export const championBubble = {
       children: [
         { name: "Autumn Wilke", value: 1 },
         { name: "Jae Baldree", value: 1 },
+        { name: "Others", value: 2 },
       ],
     },
-    { name: "CLS", children: [{ name: "Sarah Barks", value: 2 }] },
+    {
+      name: "CLS",
+      children: [
+        { name: "Others", value: 8 },
+        { name: "Sarah Barks", value: 2 },
+      ],
+    },
     { name: "CRSSJ", children: [{ name: "First-Gen Group", value: 1 }] },
     { name: "CTLA", children: [{ name: "Vanessa Preast", value: 1 }] },
     {
       name: "Dean's Office",
       children: [
         { name: "Andi Tracy", value: 1 },
+        { name: "Others", value: 5 },
         { name: "Tim Arner", value: 2 },
         { name: "Tutorial Program Leadership", value: 2 },
       ],
@@ -58,17 +67,25 @@ export const championBubble = {
         { name: "Karla Erickson", value: 2 },
         { name: "Kesho Scott", value: 1 },
         { name: "Mellon Mays", value: 1 },
+        { name: "Others", value: 15 },
         { name: "Ross Haenfler", value: 1 },
         { name: "Stephanie Jones", value: 2 },
       ],
     },
-    { name: "IGE", children: [{ name: "Alicia Stanley", value: 1 }] },
+    {
+      name: "IGE",
+      children: [
+        { name: "Alicia Stanley", value: 1 },
+        { name: "Others", value: 5 },
+      ],
+    },
     { name: "OISA", children: [{ name: "Karen Edwards", value: 3 }] },
     {
       name: "Registrar's Office",
       children: [
         { name: "Catherine Ashton", value: 2 },
         { name: "LuAnn Wheeler", value: 1 },
+        { name: "Others", value: 3 },
         { name: "Tammy Whitney", value: 3 },
         { name: "Vickie Rutherford", value: 4 },
       ],
@@ -80,7 +97,13 @@ export const championBubble = {
         { name: "SLC", value: 1 },
       ],
     },
-    { name: "Student Affairs", children: [{ name: "RLCs", value: 1 }] },
+    {
+      name: "Student Affairs",
+      children: [
+        { name: "Others", value: 2 },
+        { name: "RLCs", value: 1 },
+      ],
+    },
     {
       name: "Writing, Reading, and Speaking Center",
       children: [
