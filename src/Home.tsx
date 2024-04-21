@@ -13,7 +13,7 @@ const Home = () => {
         <Heading text={"Visualizing the Advising Landscape at Grinnell"} />
         <Grid item xs={12} className="grid-container sankey-concon">
           <Grid item xs={12} className="grid-container no-outline sankey-con">
-            {/* <HomeSankey data={{ nodes: nodes, links: links }} /> */}
+            <HomeSankey data={{ nodes: nodes, links: links }} />
           </Grid>
         </Grid>
         <Grid
@@ -54,7 +54,7 @@ const HomeSankey = ({ data }: HomeSankeyProps) => {
 
   return (
     <>
-      <h2 className="title"></h2>
+      <h2 className="title">Advising Highlights</h2>
       <ResponsiveSankey
         data={data}
         margin={{ top: 40, right: 200, bottom: 40, left: 200 }}

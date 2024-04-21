@@ -80,11 +80,48 @@ import pandas, json
 
 # print(filtered_data)
 
-df = pandas.read_csv("data/datamain.csv", sep="\t")
-df = df.fillna(0)
+df = pandas.read_csv("data/datamain.csv")
+df = df.dropna()
+df["source"] = df["source"].str.strip()
+df["target"] = df["target"].str.strip()
 
-print(df)
-df.columns = ["value", "name"]
-df = df.groupby(["name"]).sum().reset_index()
+df["target"] = df["target"].str.replace("23", "")
+df["value"] = df["value"].astype(int)
 
-print(df.to_json(orient="records"))
+valid = [
+    "Faculty Adviser",
+    "Academic Advising",
+    "Academic Resources",
+    "Course Instructors & Faculty Mentors",
+    "Supervisors",
+    "CLS",
+    "OISA",
+    "IGE",
+    "CRSSJ",
+]
+
+final_valid = []
+for v in valid:
+    final_valid.append(v)
+    final_valid.append(v + " ")
+
+df = df.groupby(["source", "target"]).sum().reset_index()
+# print([{"id": x} for x in set(df["source"].tolist() + df["target"].tolist())])
+
+df = df[["source", "target", "value"]]
+
+data = json.loads(df.to_json(orient="records"))
+
+final_data = []
+for d in data:
+    if (d["source"] in final_valid) or (d["target"] in final_valid):
+        final_data.append(d)
+
+nodes = set()
+for d in final_data:
+    nodes.add(d["source"])
+    nodes.add(d["target"])
+print([{"id": x} for x in nodes])
+
+
+print(final_data)
