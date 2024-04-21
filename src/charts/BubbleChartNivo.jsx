@@ -1,6 +1,6 @@
 import { ResponsiveCirclePacking } from "@nivo/circle-packing";
 
-const BubbleChartNivo = ({ title, data }) => {
+const BubbleChartNivo = ({ title, data, sp = false }) => {
   const TooltipComponent = (datum) => (
     <div style={{ backgroundColor: "#333", padding: "8px" }}>
       <strong style={{ color: "white" }}>
@@ -15,22 +15,36 @@ const BubbleChartNivo = ({ title, data }) => {
       <h2 className="title">{title}</h2>
       <ResponsiveCirclePacking
         data={data}
-        margin={{ top: 40, right: 115, bottom: 80, left: 115 }}
+        margin={{
+          top: sp ? -20 : 40,
+          right: sp ? -15 : 115,
+          bottom: sp ? -20 : 80,
+          left: sp ? -15 : 115,
+        }}
         id="name"
         value="value"
-        colors={{ scheme: "accent" }}
-        childColor={{
-          from: "color",
-          modifiers: [["brighter", 0.4]],
-        }}
-        padding={40}
+        inheritColorFromParent={sp}
+        colors={sp ? "rgba(0, 0, 0, 0)" : { scheme: "accent" }}
+        childColor={
+          sp
+            ? "green"
+            : {
+                from: "color",
+                modifiers: [["brighter", 0.4]],
+              }
+        }
+        padding={sp ? 20 : 40}
         enableLabels={true}
-        labelsFilter={(n) => 1 === n.node.depth}
+        labelsFilter={(n) => (sp ? 2 : 1) === n.node.depth}
         labelsSkipRadius={0}
-        labelTextColor={{
-          from: "color",
-          modifiers: [["darker", 2]],
-        }}
+        labelTextColor={
+          sp
+            ? "black"
+            : {
+                from: "color",
+                modifiers: [["darker", 2]],
+              }
+        }
         borderWidth={1}
         borderColor={{
           from: "color",
