@@ -49,6 +49,11 @@ const Dropdown = ({
       </select>
       <div className="selected-options-container">
         <h4>Selected Categories:</h4>
+        <p className="na">
+          {selectedOptions.length === 0
+            ? "Please on click themes from list above."
+            : "Please on click themes below to unselect them."}
+        </p>
         <ul className="selected-options-list">
           {selectedOptions.map((option) => (
             <li onClick={() => handleOptionChange(option)} key={option}>

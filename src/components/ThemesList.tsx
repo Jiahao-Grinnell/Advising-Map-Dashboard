@@ -21,7 +21,9 @@ const ThemesList: React.FC<ThemesListProps> = ({ title, themes }) => {
         <div key={i}>
           <h4 className="subtitle">{theme._id}</h4>
           {Object.entries(theme.v).map(([k, v]) => (
-            <li className="subsubtitle">{v}</li>
+            <li key={`${i}-${k}-${v}`} className="subsubtitle">
+              {v}
+            </li>
           ))}
         </div>
       ))}

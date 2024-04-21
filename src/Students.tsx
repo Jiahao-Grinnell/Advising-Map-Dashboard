@@ -12,6 +12,7 @@ import {
 import { Node, Link } from "./charts/students/AdvisingEntities";
 import ThemesList, { Theme } from "./components/ThemesList";
 import { stuThemesData } from "./data/students/stuThemesData";
+import { entitiesDef } from "./data/students/entitiesDef";
 import Heading from "./components/Heading";
 
 const StudentsPage = () => {
@@ -23,12 +24,19 @@ const StudentsPage = () => {
   const putAlready: any = {};
 
   const [stuThemes, setStuThemes] = React.useState<Theme[]>([]);
+  const [entThemes, setEntThemes] = React.useState<Theme[]>([]);
+
   const handleThemeClick = (
     selectedId: string,
     all_themes: any,
     themes: Theme[],
     setter: (_: Theme[]) => void
   ) => {
+    const selectedThemesId = themes.map((theme) => theme._id);
+    const thisAdvLinks = advEntitiesLinks
+      .filter(({ source }) => selectedThemesId.includes(source))
+      .map(({ target }) => target);
+
     let themeSelected = false;
     for (let i = 0; i < themes.length && !themeSelected; i++)
       themeSelected = selectedId === themes[i]._id;
@@ -43,6 +51,15 @@ const StudentsPage = () => {
       ];
       setter(newThemes);
     }
+
+    const newDefs = [];
+    for (let i = 0; i < thisAdvLinks.length; i++)
+      newDefs.push({
+        _id: thisAdvLinks[i],
+        v: entitiesDef[thisAdvLinks[i] as keyof typeof entitiesDef],
+      });
+
+    setEntThemes(newDefs);
   };
 
   const stuThemehandler = (k: string) =>
@@ -98,10 +115,16 @@ const StudentsPage = () => {
           )}
         </Grid>
       </Grid>
-      <Grid item xs={12} className="grid-container">
+      <Grid item xs={6} className="grid-container">
         <ThemesList
-          title={"Select Student Advising Questions"}
+          title={"Selected Student Advising Questions"}
           themes={stuThemes}
+        />
+      </Grid>
+      <Grid item xs={6} className="grid-container">
+        <ThemesList
+          title={"Advising Entity (based on student data)"}
+          themes={entThemes}
         />
       </Grid>
     </Grid>
