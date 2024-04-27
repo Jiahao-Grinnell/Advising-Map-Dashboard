@@ -1,9 +1,5 @@
-import { ResponsiveSankey } from "@nivo/sankey";
 import Heading from "./components/Heading";
-import { Link, Node } from "./charts/students/AdvisingEntities";
 import { Grid } from "@mui/material";
-import { links, nodes } from "./data/home/allSankey";
-import BubbleChartNivo from "./charts/BubbleChartNivo";
 import { advisinglandscape } from "./data/home/advising";
 import { CircularPacking } from "./charts/CirclePacking";
 
@@ -22,7 +18,7 @@ const Home = () => {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <CircularPacking
               data={advisinglandscape}
-              width={1000}
+              width={window.innerWidth - 100}
               height={600}
             />
           </div>
