@@ -1,12 +1,17 @@
 import * as d3 from "d3";
 import { Tree } from "../data/home/advising";
-import { useState } from "react";
 
-type CircularPackingProps = { width: number; height: number; data: Tree };
+type CircularPackingProps = {
+  width: number;
+  height: number;
+  data: Tree;
+  setHoveredNode: (k: string) => void;
+};
 export const CircularPacking = ({
   width,
   height,
   data,
+  setHoveredNode,
 }: CircularPackingProps) => {
   const hierarchy = d3
     .hierarchy(data)
@@ -15,24 +20,8 @@ export const CircularPacking = ({
   const packGenerator = d3.pack<Tree>().size([width, height]).padding(10);
   const root = packGenerator(hierarchy);
 
-  const [hoveredNode, setHoveredNode] = useState<Tree | null>(null);
-  const [mousePosition, setMousePosition] = useState<{
-    x: number;
-    y: number;
-  } | null>(null);
-
   return (
-    <svg
-      width={width}
-      height={height}
-      style={{ display: "inline-block" }}
-      onMouseMove={(event) => {
-        setMousePosition({
-          x: event.clientX,
-          y: event.clientY,
-        });
-      }}
-    >
+    <svg width={width} height={height} style={{ display: "inline-block" }}>
       {" "}
       {root
         .descendants()
@@ -47,8 +36,8 @@ export const CircularPacking = ({
             strokeWidth={2}
             fill="#B794F4"
             fillOpacity={0.2}
-            onMouseEnter={() => setHoveredNode(node.data)}
-            onMouseLeave={() => setHoveredNode(null)}
+            onMouseEnter={() => setHoveredNode(node.data.name)}
+            // onMouseLeave={() => setHoveredNode("")}
           />
         ))}{" "}
       {root
@@ -63,34 +52,12 @@ export const CircularPacking = ({
             fontWeight={0.4}
             textAnchor="middle"
             alignmentBaseline="middle"
-            onMouseEnter={() => setHoveredNode(node.data)}
-            onMouseLeave={() => setHoveredNode(null)}
+            onMouseEnter={() => setHoveredNode(node.data.name)}
           >
             {" "}
             {node.data.name}{" "}
           </text>
         ))}
-      {hoveredNode && mousePosition && (
-        <g transform={`translate(${mousePosition.x}, ${mousePosition.y})`}>
-          <rect
-            x={-260 + hoveredNode.name.length * 8}
-            y={-130}
-            width={hoveredNode.name.length * 8 + 20}
-            height={20}
-            fill="white"
-            stroke="black"
-            strokeWidth={1}
-          />
-          <text
-            x={-252 + hoveredNode.name.length * 12.5}
-            y={-115}
-            fontSize={12}
-            textAnchor="middle"
-          >
-            {hoveredNode.name}
-          </text>
-        </g>
-      )}
     </svg>
   );
 };

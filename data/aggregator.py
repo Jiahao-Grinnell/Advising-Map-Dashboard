@@ -127,6 +127,19 @@ import pandas, json
 # print(final_data)
 
 
-df = pandas.read_csv("data/datamain.csv")[["e","n"]]
-df.columns = ["name", "value"]
-print(df.to_json(orient="records"))
+# df = pandas.read_csv("data/datamain.csv")[["e","n"]]
+# df.columns = ["name", "value"]
+# print(df.to_json(orient="records"))
+
+
+df = pandas.read_csv("data/data.csv", sep="\t")[["e","n"]]
+print(df)
+df["n"] = df["n"] + "\n"
+df = df.groupby("e").sum()
+df = df.reset_index()
+res = {}
+
+for d in df.index:
+    res[df["e"][d]] = df["n"][d]
+
+print (res)
