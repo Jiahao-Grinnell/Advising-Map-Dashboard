@@ -7,6 +7,7 @@ import StaffPage from "./Staff";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Toolbar from "./components/Toolbar";
+import SummaryPage from "./Summary";
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
         <Route path="students" element={<StudentsPage />} />
         <Route path="faculty" element={<FacultyPage />} />
         <Route path="staff" element={<StaffPage />} />
-        <Route path="advisor-summary" element={<StudentsPage />} />
+        <Route path="advisor-summary" element={<SummaryPage />} />
       </Routes>
       <p className="footer">
         Made by Avaash Bhattarai '26 and Jiahao Deng for DASIL
