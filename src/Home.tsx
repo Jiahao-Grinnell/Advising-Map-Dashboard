@@ -11,23 +11,32 @@ const Home = () => {
     if (hoveredNode.length === 0)
       return <p className="na">Hover over an entity to view details.</p>;
 
-    if (hoveredNode in onclickdefs)
-      return (
-        <>
-          <h4>What do {hoveredNode} help with?</h4>
-          {onclickdefs[hoveredNode as keyof typeof onclickdefs]
+    return (
+      <>
+        <h4>What students claim about {hoveredNode}:</h4>
+        {hoveredNode in onclickdefs.s ? (
+          onclickdefs.s[hoveredNode as keyof typeof onclickdefs.s]
             .split("\n")
             .map((e, i) => (
               <li key={`${i}-${e}`} className="subsubtitle">
                 {e}
               </li>
-            ))}
-        </>
-      );
-    return (
-      <>
-        <h4>What do {hoveredNode} help with?</h4>
-        <p className="na">No details available</p>
+            ))
+        ) : (
+          <p className="na">Did not survey.</p>
+        )}
+        <h4>What faculty and staff claim about {hoveredNode}:</h4>
+        {hoveredNode in onclickdefs.fs ? (
+          onclickdefs.fs[hoveredNode as keyof typeof onclickdefs.fs]
+            .split("\n")
+            .map((e, i) => (
+              <li key={`${i}-${e}`} className="subsubtitle">
+                {e}
+              </li>
+            ))
+        ) : (
+          <p className="na">Did not survey.</p>
+        )}
       </>
     );
   };
@@ -47,7 +56,7 @@ const Home = () => {
             <div style={{ display: "flex", justifyContent: "center" }}>
               <CircularPacking
                 data={advisinglandscape}
-                width={window.innerWidth - 350}
+                width={window.innerWidth - 450}
                 height={600}
                 setHoveredNode={setHoveredNode}
               />
@@ -55,7 +64,12 @@ const Home = () => {
           </Grid>
         </Grid>
         <Grid item xs={3} className="grid-container sankey-concon">
-          <Grid item xs={12} className="grid-container no-outline sankey-con">
+          <Grid
+            item
+            xs={12}
+            className="grid-container no-outline sankey-con"
+            style={{ overflow: "scroll" }}
+          >
             <HoverTooltip />
           </Grid>
         </Grid>
