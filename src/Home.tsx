@@ -9,12 +9,12 @@ const Home = () => {
   const [hoveredNode, setHoveredNode] = useState("");
   const HoverTooltip = () => {
     if (hoveredNode.length === 0)
-      return <p className="na">Hover over an entity to view</p>;
+      return <p className="na">Hover over an entity to view details.</p>;
 
     if (hoveredNode in onclickdefs)
       return (
         <>
-          <h6 className="subtitle">{hoveredNode}</h6>
+          <h4>What do {hoveredNode} help with?</h4>
           {onclickdefs[hoveredNode as keyof typeof onclickdefs]
             .split("\n")
             .map((e, i) => (
@@ -26,7 +26,7 @@ const Home = () => {
       );
     return (
       <>
-        <h6 className="subtitle">{hoveredNode}</h6>
+        <h4>What do {hoveredNode} help with?</h4>
         <p className="na">No details available</p>
       </>
     );
@@ -56,7 +56,6 @@ const Home = () => {
         </Grid>
         <Grid item xs={3} className="grid-container sankey-concon">
           <Grid item xs={12} className="grid-container no-outline sankey-con">
-            <h2 className="title">{"Entity Details"}</h2>
             <HoverTooltip />
           </Grid>
         </Grid>
