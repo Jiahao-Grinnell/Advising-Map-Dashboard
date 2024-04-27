@@ -31,7 +31,7 @@ const StaffPage = () => {
         style={{ minHeight: "100vh" }}
       >
         <BubbleChartNivo
-          title={"Champion (as Identified by Staff)"}
+          title={"Champion (people or offices who use their position to influence, encourage, or motivate others around advising)"}
           data={championBubble}
         />
       </Grid>
@@ -42,7 +42,7 @@ const StaffPage = () => {
         style={{ minHeight: "100vh" }}
       >
         <BubbleChartNivo
-          title={"Stewards (as Identified by Staff)"}
+          title={"Stewards (people or places on campus where money or other resources to support advising are located)"}
           data={stewardsBubble}
         />
       </Grid>
