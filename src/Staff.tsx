@@ -20,7 +20,7 @@ const StaffPage = () => {
         style={{ minHeight: "100vh" }}
       >
         <BubbleChartNivo
-          title={"Assets (as Identified by Staff)"}
+          title={"Assets (the people, offices, and programs faculty and staff turn to for support for advising work)"}
           data={assetBubble}
         />
       </Grid>
