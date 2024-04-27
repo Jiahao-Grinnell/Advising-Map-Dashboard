@@ -24,7 +24,13 @@ const StudentsPage = () => {
   const putAlready: any = {};
 
   const [stuThemes, setStuThemes] = React.useState<Theme[]>([]);
-  const [entThemes, setEntThemes] = React.useState<Theme[]>([]);
+  const entThemes: Theme[] = [];
+
+  for (let k in entitiesDef) {
+    // skip loop if the property is from prototype
+    if (!entitiesDef.hasOwnProperty(k)) continue;
+    entThemes.push({ _id: k, v: entitiesDef[k as keyof typeof entitiesDef] });
+  }
 
   const handleThemeClick = (
     selectedId: string,
@@ -32,11 +38,6 @@ const StudentsPage = () => {
     themes: Theme[],
     setter: (_: Theme[]) => void
   ) => {
-    const selectedThemesId = themes.map((theme) => theme._id);
-    const thisAdvLinks = advEntitiesLinks
-      .filter(({ source }) => selectedThemesId.includes(source))
-      .map(({ target }) => target);
-
     let themeSelected = false;
     for (let i = 0; i < themes.length && !themeSelected; i++)
       themeSelected = selectedId === themes[i]._id;
@@ -51,15 +52,6 @@ const StudentsPage = () => {
       ];
       setter(newThemes);
     }
-
-    const newDefs = [];
-    for (let i = 0; i < thisAdvLinks.length; i++)
-      newDefs.push({
-        _id: thisAdvLinks[i],
-        v: entitiesDef[thisAdvLinks[i] as keyof typeof entitiesDef],
-      });
-
-    setEntThemes(newDefs);
   };
 
   const stuThemehandler = (k: string) =>
