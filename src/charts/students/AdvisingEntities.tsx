@@ -27,7 +27,6 @@ const AdvisingEntities = ({ data }: AdvisingEntitiesProps) => {
 
   return (
     <>
-      <h2 className="title">Student Questions Mapped to Advising Entities</h2>
       <ResponsiveSankey
         data={data}
         margin={{ top: 40, right: 200, bottom: 40, left: 200 }}
