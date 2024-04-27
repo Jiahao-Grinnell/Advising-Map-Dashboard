@@ -4,11 +4,27 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
   const TooltipComponent = (datum) => (
     <div style={{ backgroundColor: "#333", padding: "8px" }}>
       <strong style={{ color: "white" }}>
-        {datum.id}
+        {datum.id === "Others" ? datum.path[1] : datum.id}
         {/* : {datum.value}% */}
       </strong>
     </div>
   );
+
+  const getColor = (node) => {
+    // You can use node.id, node.value, or other properties to determine color
+    // For example, return different colors based on node.id
+    if (node.id === "Others") {
+      return "transparent";
+    } else if (node.depth === 1) {
+      return "#7fc97f";
+    } else if (node.depth === 2) {
+      return "#386cb0";
+    } else if (node.depth === 3) {
+      return "#f0027f";
+    } else {
+      return "transparent"; // Default color
+    }
+  };
 
   return (
     <>
@@ -24,7 +40,7 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
         id="name"
         value="value"
         inheritColorFromParent={sp}
-        colors={sp ? "rgba(0, 0, 0, 0)" : { scheme: "accent" }}
+        colors={sp ? "rgba(0, 0, 0, 0)" : getColor}
         childColor={
           sp
             ? "green"
@@ -46,10 +62,14 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
               }
         }
         borderWidth={1}
-        borderColor={{
-          from: "color",
-          modifiers: [["darker", 0.5]],
-        }}
+        borderColor={
+          sp
+            ? {
+                from: "color",
+                modifiers: [["darker", 0.5]],
+              }
+            : getColor
+        }
         tooltip={TooltipComponent}
       />
     </>
