@@ -33,9 +33,9 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
         data={data}
         margin={{
           top: sp ? -20 : 40,
-          right: sp ? -15 : 115,
-          bottom: sp ? -20 : 80,
-          left: sp ? -15 : 115,
+          right: sp ? -20 : 115,
+          bottom: sp ? -20 : 40,
+          left: sp ? -20 : 115,
         }}
         id="name"
         value="value"

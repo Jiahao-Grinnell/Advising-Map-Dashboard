@@ -17,6 +17,7 @@ const App: React.FC = () => {
         <Route path="students" element={<StudentsPage />} />
         <Route path="faculty" element={<FacultyPage />} />
         <Route path="staff" element={<StaffPage />} />
+        <Route path="advisor-summary" element={<StudentsPage />} />
       </Routes>
       <p className="footer">
         Made by Avaash Bhattarai '26 and Jiahao Deng for DASIL

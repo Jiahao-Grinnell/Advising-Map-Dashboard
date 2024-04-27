@@ -24,7 +24,7 @@ import pandas, json
 
 # print((df.to_json(orient="records")))
 
-# df = pandas.read_csv("data/data.csv", sep="\t")
+# df = pandas.read_csv("data/datamain.csv")
 # df = df.fillna("Others")
 # df = df.groupby(["e", "s"]).sum()
 # df = df.reset_index()
@@ -80,48 +80,53 @@ import pandas, json
 
 # print(filtered_data)
 
-df = pandas.read_csv("data/datamain.csv")
-df = df.dropna()
-df["source"] = df["source"].str.strip()
-df["target"] = df["target"].str.strip()
+# df = pandas.read_csv("data/datamain.csv")
+# df = df.dropna()
+# df["source"] = df["source"].str.strip()
+# df["target"] = df["target"].str.strip()
 
-df["target"] = df["target"].str.replace("23", "")
-df["value"] = df["value"].astype(int)
+# df["target"] = df["target"].str.replace("23", "")
+# df["value"] = df["value"].astype(int)
 
-valid = [
-    "Faculty Adviser",
-    "Academic Advising",
-    "Academic Resources",
-    "Course Instructors & Faculty Mentors",
-    "Supervisors",
-    "CLS",
-    "OISA",
-    "IGE",
-    "CRSSJ",
-]
+# valid = [
+#     "Faculty Adviser",
+#     "Academic Advising",
+#     "Academic Resources",
+#     "Course Instructors & Faculty Mentors",
+#     "Supervisors",
+#     "CLS",
+#     "OISA",
+#     "IGE",
+#     "CRSSJ",
+# ]
 
-final_valid = []
-for v in valid:
-    final_valid.append(v)
-    final_valid.append(v + " ")
+# final_valid = []
+# for v in valid:
+#     final_valid.append(v)
+#     final_valid.append(v + " ")
 
-df = df.groupby(["source", "target"]).sum().reset_index()
-# print([{"id": x} for x in set(df["source"].tolist() + df["target"].tolist())])
+# df = df.groupby(["source", "target"]).sum().reset_index()
+# # print([{"id": x} for x in set(df["source"].tolist() + df["target"].tolist())])
 
-df = df[["source", "target", "value"]]
+# df = df[["source", "target", "value"]]
 
-data = json.loads(df.to_json(orient="records"))
+# data = json.loads(df.to_json(orient="records"))
 
-final_data = []
-for d in data:
-    if (d["source"] in final_valid) or (d["target"] in final_valid):
-        final_data.append(d)
+# final_data = []
+# for d in data:
+#     if (d["source"] in final_valid) or (d["target"] in final_valid):
+#         final_data.append(d)
 
-nodes = set()
-for d in final_data:
-    nodes.add(d["source"])
-    nodes.add(d["target"])
-print([{"id": x} for x in nodes])
+# nodes = set()
+# for d in final_data:
+#     nodes.add(d["source"])
+#     nodes.add(d["target"])
+# print([{"id": x} for x in nodes])
 
 
-print(final_data)
+# print(final_data)
+
+
+df = pandas.read_csv("data/datamain.csv")[["e","n"]]
+df.columns = ["name", "value"]
+print(df.to_json(orient="records"))

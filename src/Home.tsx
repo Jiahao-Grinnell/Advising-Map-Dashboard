@@ -5,6 +5,7 @@ import { Grid } from "@mui/material";
 import { links, nodes } from "./data/home/allSankey";
 import BubbleChartNivo from "./charts/BubbleChartNivo";
 import { advisinglandscape } from "./data/home/advising";
+import { CircularPacking } from "./charts/CirclePacking";
 
 const Home = () => {
   return (
@@ -23,11 +24,14 @@ const Home = () => {
           style={{ height: 600 }}
         >
           <Grid item xs={12} className="grid-container no-outline sankey-con">
-            <BubbleChartNivo
-              title={"Advising Landscape at Grinnell"}
-              data={advisinglandscape}
-              sp={true}
-            />
+            <h2 className="title">{"Advising Landscape at Grinnell"}</h2>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <CircularPacking
+                data={advisinglandscape}
+                width={1000}
+                height={600}
+              />
+            </div>
           </Grid>
         </Grid>
       </section>
