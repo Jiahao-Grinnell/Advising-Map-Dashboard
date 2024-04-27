@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
       <>
-        <h4>What students claim about {hoveredNode}:</h4>
+        <h4>What students claim {hoveredNode} help with?</h4>
         {hoveredNode in onclickdefs.s ? (
           onclickdefs.s[hoveredNode as keyof typeof onclickdefs.s]
             .split("\n")
@@ -25,7 +25,7 @@ const Home = () => {
         ) : (
           <p className="na">Did not survey.</p>
         )}
-        <h4>What faculty and staff claim about {hoveredNode}:</h4>
+        <h4>What faculty and staff claim {hoveredNode} help with?</h4>
         {hoveredNode in onclickdefs.fs ? (
           onclickdefs.fs[hoveredNode as keyof typeof onclickdefs.fs]
             .split("\n")
