@@ -20,7 +20,7 @@ const FacultyPage = () => {
         style={{ minHeight: "100vh" }}
       >
         <BubbleChartNivo
-          title={"Assets (as Identified by Faculty)"}
+          title={"Assets (the people, offices, and programs faculty and staff turn to for support for advising work)"}
           data={assetBubble}
         />
       </Grid>
@@ -31,7 +31,7 @@ const FacultyPage = () => {
         style={{ minHeight: "100vh" }}
       >
         <BubbleChartNivo
-          title={"Champion (as Identified by Faculty)"}
+          title={"Champion ( people or offices who use their position to influence, encourage, or motivate others around advising)"}
           data={championBubble}
         />
       </Grid>
@@ -42,7 +42,7 @@ const FacultyPage = () => {
         style={{ minHeight: "100vh" }}
       >
         <BubbleChartNivo
-          title={"Stewards (as Identified by Faculty)"}
+          title={"Stewards (people or places on campus where money or other resources to support advising are located)"}
           data={stewardsBubble}
         />
       </Grid>
