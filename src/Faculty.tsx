@@ -51,44 +51,59 @@ const FacultyPage = () => {
       <Grid item xs={12}>
         <Heading text={"Faculty Advising Input"} />
       </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+      {/* <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo
           title={"Assets (as Identified by Faculty)"}
           data={assetPie}
         />
-      </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+      </Grid> */}
+      <Grid
+        item
+        xs={12}
+        className="grid-container"
+        style={{ minHeight: "100vh" }}
+      >
         <BubbleChartNivo
           title={"Assets (as Identified by Faculty)"}
           data={assetBubble}
         />
       </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+      {/* <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo
           title={"Stewards (as Identified by Faculty)"}
           data={stewardsPie}
         />
-      </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+      </Grid> */}
+      <Grid
+        item
+        xs={12}
+        className="grid-container"
+        style={{ minHeight: "100vh" }}
+      >
         <BubbleChartNivo
           title={"Stewards (as Identified by Faculty)"}
           data={stewardsBubble}
         />
       </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+      {/* <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo
           title={"Champion (as Identified by Faculty)"}
           data={championPie}
         />
-      </Grid>
-      <Grid item xs={6} className="grid-container" style={{ minHeight: 600 }}>
+      </Grid> */}
+      <Grid
+        item
+        xs={12}
+        className="grid-container"
+        style={{ minHeight: "100vh" }}
+      >
         <BubbleChartNivo
           title={"Champion (as Identified by Faculty)"}
           data={championBubble}
         />
       </Grid>
-      {/* // */}
-      <Grid item xs={4} className="grid-container" style={{ minHeight: 600 }}>
+
+      {/* <Grid item xs={4} className="grid-container" style={{ minHeight: 600 }}>
         <PieChartNivo
           title={"Resources Seen as Plentiful"}
           data={plentifulPie}
@@ -108,13 +123,12 @@ const FacultyPage = () => {
           onClick={gapThemehandler}
         />
       </Grid>
-      {/* // */}
       <Grid item xs={6} className="grid-container">
         <ThemesList title={"Desired Themes"} themes={desThemes} />
       </Grid>
       <Grid item xs={6} className="grid-container">
         <ThemesList title={"Gap Themes"} themes={gapThemes} />
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };

@@ -8,6 +8,7 @@ const Toolbar = () => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Grinnell_College_logo.png"
           width={50}
+          alt="Grinnell College logo"
         ></img>
       </div>
       <nav>
