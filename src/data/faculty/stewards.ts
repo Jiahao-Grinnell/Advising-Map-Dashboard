@@ -51,9 +51,9 @@ export const stewardsBubble = {
     {
       name: "Academic Advising",
       children: [
-        { name: "Belinda Backous", value: 1 },
-        { name: "Kate Ferraro", value: 1 },
-        { name: "Others", value: 10 },
+        //{ name: "Belinda Backous", value: 1 },
+        //{ name: "Kate Ferraro", value: 1 },
+        { name: "Others", value: 12 },
       ],
     },
     {
@@ -68,8 +68,8 @@ export const stewardsBubble = {
     {
       name: "Dean's Office",
       children: [
-        { name: "Others", value: 10 },
-        { name: "Tim Arner", value: 1 },
+        { name: "Others", value: 11 },
+        //{ name: "Tim Arner", value: 1 },
       ],
     },
     { name: "Executive Council", children: [{ name: "Others", value: 1 }] },
@@ -93,9 +93,9 @@ export const stewardsBubble = {
     {
       name: "Registrar's Office",
       children: [
-        { name: "Others", value: 8 },
-        { name: "Tammy Whitney", value: 1 },
-        { name: "Vickie Rutherford", value: 1 },
+        { name: "Others", value: 10 },
+        //{ name: "Tammy Whitney", value: 1 },
+       //{ name: "Vickie Rutherford", value: 1 },
       ],
     },
     {
@@ -105,8 +105,8 @@ export const stewardsBubble = {
     {
       name: "Student Affairs",
       children: [
-        { name: "NSO Organizers", value: 1 },
-        { name: "Others", value: 3 },
+        //{ name: "NSO Organizers", value: 1 },
+        { name: "Others", value: 4 },
       ],
     },
     {
