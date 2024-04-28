@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Route path="advisor-summary" element={<SummaryPage />} />
       </Routes>
       <p className="footer">
-        Made by Avaash Bhattarai '26 and Jiahao Deng for DASIL
+        Made by Avaash Bhattarai '26 and Jiahao Deng
       </p>
     </BrowserRouter>
   );
