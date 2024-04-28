@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
       <>
-        <h4>What students claim {hoveredNode} help with?</h4>
+        <h4>What students report {hoveredNode} help with?</h4>
         {hoveredNode in onclickdefs.s ? (
           onclickdefs.s[hoveredNode as keyof typeof onclickdefs.s]
             .split("\n")
