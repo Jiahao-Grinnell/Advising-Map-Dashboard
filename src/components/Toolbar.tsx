@@ -26,7 +26,7 @@ const Toolbar = () => {
             <Link to="/staff">Staff</Link>
           </li>
           <li>
-            <Link to="/advisor-summary">Advisor Summary</Link>
+            <Link to="/advisor-summary">Adviser Summary</Link>
           </li>
         </ul>
       </nav>
