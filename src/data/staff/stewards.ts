@@ -38,9 +38,9 @@ export const stewardsBubble = {
     {
       name: "CLS",
       children: [
-        { name: "Kelly Harris", value: 1 },
-        { name: "Mark Peltz", value: 2 },
-        { name: "Others", value: 5 },
+        //{ name: "Kelly Harris", value: 1 },
+        //{ name: "Mark Peltz", value: 2 },
+        { name: "Others", value: 8 },
       ],
     },
     { name: "CRSSJ", children: [{ name: "Others", value: 1 }] },
@@ -50,8 +50,8 @@ export const stewardsBubble = {
     {
       name: "Dean's Office",
       children: [
-        { name: "Others", value: 5 },
-        { name: "Tutorial and Advising Committee", value: 1 },
+        { name: "Others", value: 6 },
+        //{ name: "Tutorial and Advising Committee", value: 1 },
       ],
     },
     { name: "Facilities Management", children: [{ name: "Others", value: 1 }] },
