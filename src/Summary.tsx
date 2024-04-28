@@ -42,7 +42,7 @@ const SummaryPage = () => {
   return (
     <Grid container spacing={1} style={{ height: "100%" }}>
       <Grid item xs={12}>
-        <Heading text={"New Title?"} />
+        <Heading text={"Types of Advising Provided by Faculty and Staff"} />
       </Grid>
       <Grid item xs={3} className="grid-container" style={{ minHeight: 680 }}>
         <DropdownSelector

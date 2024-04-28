@@ -17,11 +17,18 @@ export const CircularPacking = ({
     .hierarchy(data)
     .sum((d) => d.value)
     .sort((a, b) => b.value! - a.value!);
-  const packGenerator = d3.pack<Tree>().size([width, height]).padding(10);
+  const packGenerator = d3
+    .pack<Tree>()
+    .size([width / 1.75, height])
+    .padding(10);
   const root = packGenerator(hierarchy);
 
   return (
-    <svg width={width} height={height} style={{ display: "inline-block" }}>
+    <svg
+      width={width / 0.7}
+      height={height}
+      style={{ display: "inline-block" }}
+    >
       {" "}
       {root
         .descendants()
@@ -29,7 +36,7 @@ export const CircularPacking = ({
         .map((node) => (
           <circle
             key={node.data.name}
-            cx={node.x * 1.75 - 500}
+            cx={node.x * 1.75 - 50}
             cy={node.y}
             r={node.r}
             stroke="#553C9A"
@@ -46,7 +53,7 @@ export const CircularPacking = ({
         .map((node) => (
           <text
             key={node.data.name}
-            x={node.x * 1.75 - 500}
+            x={node.x * 1.75 - 50}
             y={node.y}
             fontSize={13}
             fontWeight={0.4}

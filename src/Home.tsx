@@ -25,7 +25,7 @@ const Home = () => {
         ) : (
           <p className="na">Did not survey.</p>
         )}
-        <h4>What faculty and staff claim {hoveredNode} help with?</h4>
+        <h4>What {hoveredNode} report they help with?</h4>
         {hoveredNode in onclickdefs.fs ? (
           onclickdefs.fs[hoveredNode as keyof typeof onclickdefs.fs]
             .split("\n")
@@ -53,10 +53,16 @@ const Home = () => {
         >
           <Grid item xs={12} className="grid-container no-outline sankey-con">
             <h2 className="title">{"Advising Landscape at Grinnell"}</h2>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                overflow: "scroll",
+              }}
+            >
               <CircularPacking
                 data={advisinglandscape}
-                width={window.innerWidth - 450}
+                width={window.innerWidth * 0.7}
                 height={600}
                 setHoveredNode={setHoveredNode}
               />
