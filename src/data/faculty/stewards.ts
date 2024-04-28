@@ -77,7 +77,7 @@ export const stewardsBubble = {
     { name: "Faculty/Coaches", children: [{ name: "Others", value: 2 }] },
     {
       name: "Grinnell Science Project",
-      children: [{ name: "GSP Organizers", value: 1 }],
+      children: [{ name: "Others", value: 1 }],
     },
     { name: "IGE", children: [{ name: "Others", value: 2 }] },
     {
@@ -111,7 +111,7 @@ export const stewardsBubble = {
     },
     {
       name: "The President's Office",
-      children: [{ name: "The President", value: 1 }],
+      children: [{ name: "Others", value: 1 }],
     },
     {
       name: "Tutorial and Advising Committee",
