@@ -64,7 +64,7 @@ export const assetBubble = {
       ],
     },
     {
-      name: "Academic Department Leadership",
+      name: "Academic\nDepartment\nLeadership",
       children: [{ name: "Others", value: 7.0 }],
     },
     {
@@ -79,7 +79,7 @@ export const assetBubble = {
       ],
     },
     {
-      name: "Accessibility and Disability Resources",
+      name: "Accessibility\nand Disability\nResources",
       children: [
         { name: "Autumn Wilke", value: 1.0 },
         { name: "Jae Baldree", value: 1.0 },
@@ -123,11 +123,11 @@ export const assetBubble = {
       children: [{ name: "Tutorial & Advising Committee", value: 2.0 }],
     },
     {
-      name: "Disability and Accessibility Resources",
+      name: "Disability and\nAccessibility\nResources",
       children: [{ name: "Others", value: 2.0 }],
     },
     {
-      name: "Grinnell Science Project",
+      name: "Grinnell\nScience\nProject",
       children: [{ name: "Others", value: 1.0 }],
     },
     {
@@ -165,11 +165,11 @@ export const assetBubble = {
     },
     { name: "PEAR", children: [{ name: "Others", value: 5.0 }] },
     {
-      name: "Print College Resources",
+      name: "Print\nCollege\nResources",
       children: [{ name: "Others", value: 1.0 }],
     },
     {
-      name: "Professional Organizations",
+      name: "Professional\nOrganizations",
       children: [{ name: "Others", value: 3.0 }],
     },
     {

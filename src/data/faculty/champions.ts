@@ -35,7 +35,7 @@ export const championBubble = {
       ],
     },
     {
-      name: "Accessibility and Disability Resources",
+      name: "Accessibility\nand Disability\nResources",
       children: [
         { name: "Autumn Wilke", value: 1 },
         { name: "Jae Baldree", value: 1 },
@@ -91,7 +91,7 @@ export const championBubble = {
       ],
     },
     {
-      name: "Science Learning Center",
+      name: "Science Learning\nCenter",
       children: [
         { name: "Minna Mahlab", value: 2 },
         { name: "SLC", value: 1 },
@@ -105,7 +105,7 @@ export const championBubble = {
       ],
     },
     {
-      name: "Writing, Reading, and Speaking Center",
+      name: "Writing,\nReading, and\nSpeaking Center",
       children: [
         { name: "Writing Center", value: 1 },
         { name: "Writing/Reading/Speaking Center", value: 1 },

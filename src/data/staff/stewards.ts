@@ -31,10 +31,10 @@ export const stewardsPie = [
 export const stewardsBubble = {
   name: "Stewards",
   children: [
-    { name: "Academic Advising", children: [{ name: "Others", value: 2 }] },
-    { name: "Academic Departments", children: [{ name: "Others", value: 1 }] },
-    { name: "Academic Resources", children: [{ name: "Others", value: 1 }] },
-    { name: "Board of Trustees", children: [{ name: "Others", value: 1 }] },
+    { name: "Academic\nAdvising", children: [{ name: "Others", value: 2 }] },
+    { name: "Academic\nDepartments", children: [{ name: "Others", value: 1 }] },
+    { name: "Academic\nResources", children: [{ name: "Others", value: 1 }] },
+    { name: "Board of\nTrustees", children: [{ name: "Others", value: 1 }] },
     {
       name: "CLS",
       children: [
@@ -54,11 +54,14 @@ export const stewardsBubble = {
         //{ name: "Tutorial and Advising Committee", value: 1 },
       ],
     },
-    { name: "Facilities Management", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Facilities\nManagement",
+      children: [{ name: "Others", value: 1 }],
+    },
     { name: "Faculty/Coaches", children: [{ name: "Others", value: 5 }] },
     { name: "Financial Aid", children: [{ name: "Others", value: 3 }] },
     {
-      name: "Humanities and Social Sciences Center",
+      name: "Humanities\nand Social\nSciences Center",
       children: [{ name: "Others", value: 1 }],
     },
     { name: "Library", children: [{ name: "Others", value: 1 }] },
@@ -67,7 +70,7 @@ export const stewardsBubble = {
     { name: "Registrar's Office", children: [{ name: "Others", value: 3 }] },
     { name: "Rosenfield Program", children: [{ name: "Others", value: 3 }] },
     { name: "SHAW", children: [{ name: "Others", value: 1 }] },
-    { name: "Senior Leadership", children: [{ name: "Others", value: 1 }] },
+    { name: "Senior\nLeadership", children: [{ name: "Others", value: 1 }] },
     { name: "Uncertain", children: [{ name: "Others", value: 2 }] },
     { name: "Wilson Program", children: [{ name: "Others", value: 3 }] },
   ],

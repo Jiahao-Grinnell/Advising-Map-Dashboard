@@ -57,14 +57,17 @@ export const stewardsBubble = {
       ],
     },
     {
-      name: "Academic Resource Centers",
+      name: "Academic\nResource\nCenters",
       children: [{ name: "Others", value: 1 }],
     },
-    { name: "Board of Trustees", children: [{ name: "Others", value: 1 }] },
-    { name: "Budget Committee", children: [{ name: "Others", value: 1 }] },
+    { name: "Board of\nrustees", children: [{ name: "Others", value: 1 }] },
+    { name: "Budget\nCommittee", children: [{ name: "Others", value: 1 }] },
     { name: "CLS", children: [{ name: "Others", value: 11 }] },
     { name: "CTLA", children: [{ name: "Others", value: 3 }] },
-    { name: "Center for Humanities", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Center for\nHumanities",
+      children: [{ name: "Others", value: 1 }],
+    },
     {
       name: "Dean's Office",
       children: [
@@ -72,20 +75,20 @@ export const stewardsBubble = {
         //{ name: "Tim Arner", value: 1 },
       ],
     },
-    { name: "Executive Council", children: [{ name: "Others", value: 1 }] },
-    { name: "Faculty Workshops", children: [{ name: "Others", value: 1 }] },
+    { name: "Executive\nCouncil", children: [{ name: "Others", value: 1 }] },
+    { name: "Faculty\nWorkshops", children: [{ name: "Others", value: 1 }] },
     { name: "Faculty/Coaches", children: [{ name: "Others", value: 2 }] },
     {
-      name: "Grinnell Science Project",
+      name: "Grinnell\nScience\nProject",
       children: [{ name: "Others", value: 1 }],
     },
     { name: "IGE", children: [{ name: "Others", value: 2 }] },
     {
-      name: "Institute for Global Engagement",
+      name: "Institute\nfor Global\nEngagement",
       children: [{ name: "Others", value: 1 }],
     },
     {
-      name: "Instructional Support Committee",
+      name: "Instructional\nSupport\nCommittee",
       children: [{ name: "Others", value: 1 }],
     },
     { name: "MAP Program", children: [{ name: "Others", value: 1 }] },
@@ -94,12 +97,12 @@ export const stewardsBubble = {
       name: "Registrar's Office",
       children: [
         { name: "Others", value: 10 },
-        //{ name: "Tammy Whitney", value: 1 },
-       //{ name: "Vickie Rutherford", value: 1 },
+        // { name: "Tammy Whitney", value: 1 },
+        // { name: "Vickie Rutherford", value: 1 },
       ],
     },
     {
-      name: "Science Learning Center",
+      name: "Science\nLearning\nCenter",
       children: [{ name: "Others", value: 1 }],
     },
     {
@@ -110,11 +113,11 @@ export const stewardsBubble = {
       ],
     },
     {
-      name: "The President's Office",
+      name: "The\nPresident's\nOffice",
       children: [{ name: "Others", value: 1 }],
     },
     {
-      name: "Tutorial and Advising Committee",
+      name: "Tutorial\nand Advising\nCommittee",
       children: [{ name: "Others", value: 5 }],
     },
     { name: "Uncertain", children: [{ name: "Others", value: 6 }] },

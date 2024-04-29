@@ -43,12 +43,12 @@ export const championBubble = {
       ],
     },
     {
-      name: "Academic Department Leadership",
+      name: "Academic\nDepartment\nLeadership",
       children: [{ name: "Others", value: 1 }],
     },
-    { name: "Academic Resources", children: [{ name: "Others", value: 1 }] },
+    { name: "Academic\nResources", children: [{ name: "Others", value: 1 }] },
     {
-      name: "Accessibility and Disability Resources",
+      name: "Accessibility\nand Disability\nResources",
       children: [
         { name: "Assistive Technology", value: 1 },
         { name: "Autumn Wilke", value: 2 },
@@ -73,7 +73,10 @@ export const championBubble = {
         { name: "Tutorial and Advising Committee", value: 1 },
       ],
     },
-    { name: "Facilities Management", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Facilities\nManagement",
+      children: [{ name: "Others", value: 1 }],
+    },
     {
       name: "Faculty/Coaches",
       children: [
@@ -88,7 +91,10 @@ export const championBubble = {
       ],
     },
     { name: "Financial Aid", children: [{ name: "Others", value: 2 }] },
-    { name: "Higher Administration", children: [{ name: "Others", value: 1 }] },
+    {
+      name: "Higher\nAdministration",
+      children: [{ name: "Others", value: 1 }],
+    },
     { name: "ICA", children: [{ name: "Others", value: 2 }] },
     { name: "IGE", children: [{ name: "Others", value: 2 }] },
     { name: "OISA", children: [{ name: "Others", value: 4 }] },
@@ -100,10 +106,10 @@ export const championBubble = {
         { name: "Others", value: 1 },
       ],
     },
-    { name: "Student Resources", children: [{ name: "Others", value: 2 }] },
+    { name: "Student\nResources", children: [{ name: "Others", value: 2 }] },
     { name: "Students", children: [{ name: "Others", value: 1 }] },
     {
-      name: "The President's Office",
+      name: "The\nPresident's\nOffice",
       children: [{ name: "Others", value: 1 }],
     },
     { name: "Uncertain", children: [{ name: "Others", value: 1 }] },
