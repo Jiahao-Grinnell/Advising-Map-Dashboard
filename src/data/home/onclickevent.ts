@@ -10,6 +10,7 @@ export const onclickdefs = {
   "CRSSJ": "Finding Balance/Personal Needs\nIdentity-Specific Needs\nInternships/Gaining Experience",
   "Coaches & PEAR Staff": "Finding Balance/Personal Needs\nOCS & Co-Curriculars",
   "Course Instructors & Faculty Mentors": "Academic Support & Resources\nMAPs & Independent Study\nGraduate/Professional School\nCareer Planning\nChoosing a Major/Concentration\n4-Year Planning\nOCS & Co-Curriculars\nProfessors and Classes\nCareer Skills (How do I …)\nCourse Selection & Registration\nIdentity-Specific Needs\nFinding Balance/Personal Needs\nInternships/Gaining Experience",
+  "DSA":"(Did not indicate)",
   "Faculty Adviser": "Course Selection & Registration\nChoosing a Major/Concentraton\nProfessors and Classes\n4-Year Planning\nMAPs & Independent Study\nGraduate/Professional School\nCareer Planning\nInternships/Gaining Experience\nAcademic Support & Resources\nOCS & Co-Curriculars\nCareer Skills (How do I …)\nIdentity-Specific Needs\nFinding Balance/Personal Needs",
   "Family": "Finding Balance/Personal Needs\nCareer Planning\nCourse Selection & Registration\nCareer Skills (How do I …)\nChoosing a Major/Concentraton\nGraduate/Professional School\n4-Year Planning",
   "Healthcare Professionals": "Finding Balance/Personal Needs\nIdentity-Specific Needs",
