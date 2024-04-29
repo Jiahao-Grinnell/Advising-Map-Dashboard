@@ -6,7 +6,7 @@ export const onclickdefs = {
   "Accessibility & Disability Resources": "Identity-Specific Needs",
   "Admission, Financial Aid, & Student Accounts": "Finding Balance/Personal Needs\nIdentity-Specific Needs",
   "Board of Trustees": "Internships/Gaining Experience",
-  "CLS": "Internships/Gaining Experience\nCareer Skills (How do I …)\nCareer Planning\nGraduate/Professional School\nOCS & Co-Curriculars\nIdentity-Specific Needs\nAcademic Support & Resources\nFinding Balance/Personal Needs\nProfessors and Classes\nGraduate and Professional School,
+  "CLS": "Internships/Gaining Experience\nCareer Skills (How do I …)\nCareer Planning\nGraduate/Professional School\nOCS & Co-Curriculars\nIdentity-Specific Needs\nAcademic Support & Resources\nFinding Balance/Personal Needs\nProfessors and Classes,
   "CRSSJ": "Finding Balance/Personal Needs\nIdentity-Specific Needs\nInternships/Gaining Experience",
   "Coaches & PEAR Staff": "Finding Balance/Personal Needs\nOCS & Co-Curriculars",
   "Course Instructors & Faculty Mentors": "Academic Support & Resources\nMAPs & Independent Study\nGraduate/Professional School\nCareer Planning\nChoosing a Major/Concentration\n4-Year Planning\nOCS & Co-Curriculars\nProfessors and Classes\nCareer Skills (How do I …)\nCourse Selection & Registration\nIdentity-Specific Needs\nFinding Balance/Personal Needs\nInternships/Gaining Experience",
