@@ -13,7 +13,7 @@ export const onclickdefs = {
   "DSA":"(Did not indicate)",
   "Faculty Adviser": "Course Selection & Registration\nChoosing a Major/Concentraton\nProfessors and Classes\n4-Year Planning\nMAPs & Independent Study\nGraduate/Professional School\nCareer Planning\nInternships/Gaining Experience\nAcademic Support & Resources\nOCS & Co-Curriculars\nCareer Skills (How do I …)\nIdentity-Specific Needs\nFinding Balance/Personal Needs",
   "Family": "Finding Balance/Personal Needs\nCareer Planning\nCourse Selection & Registration\nCareer Skills (How do I …)\nChoosing a Major/Concentraton\nGraduate/Professional School\n4-Year Planning",
-  "Healthcare Professionals": "Finding Balance/Personal Needs\nIdentity-Specific Needs",
+  "Healthcare Professionals (SHAW)": "Finding Balance/Personal Needs\nIdentity-Specific Needs",
   "IGE": "OCS & Co-Curriculars",
   "Identity Groups": "Career Skills (How do I …)\nCourse Selection & Registration",
   "ODEI": "Identity-Specific Needs\nProfessors and Classes",
