@@ -61,14 +61,14 @@ export const assetBubble = {
         { name: "Others", value: 20 },
       ],
     },
-    { name: "Academic Assistants", children: [{ name: "Others", value: 2 }] },
+    { name: "Academic\nAssistants", children: [{ name: "Others", value: 2 }] },
     {
-      name: "Academic Department Leadership",
+      name: "Academic\nDepartment\nLeadership",
       children: [{ name: "Others", value: 1 }],
     },
-    { name: "Academic Departments", children: [{ name: "Others", value: 2 }] },
+    { name: "Academic\nDepartments", children: [{ name: "Others", value: 2 }] },
     {
-      name: "Academic Resources",
+      name: "Academic\nResources",
       children: [
         { name: "Course Mentors/Tutors", value: 1 },
         { name: "HPAC", value: 1 },
@@ -80,7 +80,7 @@ export const assetBubble = {
       ],
     },
     {
-      name: "Accessibility and Disability Resources",
+      name: "Accessibility\nand\nDisability Resources",
       children: [
         { name: "Autumn Wilke", value: 3 },
         { name: "Emily Fenner", value: 1 },
@@ -89,7 +89,7 @@ export const assetBubble = {
       ],
     },
     {
-      name: "Admission, Financial Aid, and Student Accounts",
+      name: "Admission,\nFinancial Aid,\nand Student\nAccounts",
       children: [
         { name: "Admission", value: 1 },
         { name: "Others", value: 1 },
@@ -108,7 +108,7 @@ export const assetBubble = {
     },
     { name: "CRSSJ", children: [{ name: "Others", value: 1 }] },
     {
-      name: "Coaches and PEAR Staff",
+      name: "Coaches and\nPEAR Staff",
       children: [{ name: "Others", value: 1 }],
     },
     {
@@ -119,7 +119,7 @@ export const assetBubble = {
       ],
     },
     {
-      name: "Community Partnerships, Planning, & Research",
+      name: "Community\nPartnerships,\nPlanning, & Research",
       children: [{ name: "Others", value: 1 }],
     },
     { name: "DAR", children: [{ name: "Others", value: 3 }] },
@@ -141,17 +141,17 @@ export const assetBubble = {
         { name: "Scholarship Selection Committee Members", value: 1 },
       ],
     },
-    { name: "Faculty ", children: [{ name: "Others", value: 1 }] },
+    { name: "Faculty", children: [{ name: "Others", value: 1 }] },
     { name: "Financial Aid", children: [{ name: "Others", value: 2 }] },
     {
-      name: "Friends and Colleagues",
+      name: "Friends\nand\nColleagues",
       children: [
         { name: "DLAC", value: 1 },
         { name: "Library", value: 1 },
       ],
     },
     {
-      name: "Higher Administration",
+      name: "Higher\nAdministration",
       children: [
         { name: "Associate Dean", value: 1 },
         { name: "Dean's Office", value: 3 },
@@ -208,7 +208,7 @@ export const assetBubble = {
       ],
     },
     {
-      name: "Student Resources",
+      name: "Student\nResources",
       children: [{ name: "Ben Newhouse", value: 1 }],
     },
   ],

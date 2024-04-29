@@ -18,7 +18,7 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
     } else if (node.depth === 1) {
       return "#7fc97f";
     } else if (node.depth === 2) {
-      return "#386cb0";
+      return "#85C1E9";
     } else if (node.depth === 3) {
       return "#f0027f";
     } else {
@@ -32,10 +32,10 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
       <ResponsiveCirclePacking
         data={data}
         margin={{
-          top: sp ? -20 : 40,
-          right: sp ? -20 : 115,
-          bottom: sp ? -20 : 40,
-          left: sp ? -20 : 115,
+          top: sp ? -20 : -20,
+          right: sp ? -20 : -20,
+          bottom: sp ? -20 : -20,
+          left: sp ? -20 : -20,
         }}
         id="name"
         value="value"
@@ -71,6 +71,38 @@ const BubbleChartNivo = ({ title, data, sp = false }) => {
             : getColor
         }
         tooltip={TooltipComponent}
+        labelComponent={({ node }) => {
+          const lines = node.id.split("\n");
+          const isLengthEven = lines.length % 2 === 0;
+          const start = isLengthEven
+            ? node.y - Math.floor(lines.length / 2) * 14.4 + 7.2
+            : node.y - Math.floor(lines.length / 2) * 14.4;
+
+          return (
+            <text
+              x={node.x}
+              y={start}
+              textAnchor="middle"
+              dominantBaseline="central"
+              style={{
+                fontSize: "10px",
+                fontWeight: "bold",
+                pointerEvents: "none",
+              }}
+            >
+              {lines.map((line, index) => (
+                <tspan
+                  key={index}
+                  x={node.x}
+                  dy={index === 0 ? "0" : "1.2em"}
+                  textAnchor={"middle"}
+                >
+                  {line}
+                </tspan>
+              ))}
+            </text>
+          );
+        }}
       />
     </>
   );
