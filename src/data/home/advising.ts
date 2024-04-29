@@ -28,6 +28,7 @@ export const advisinglandscape: Tree = {
     { name: "Coaches & PEAR Staff", value: 4, type: "leaf" },
     { name: "Course Instructors & Faculty Mentors", value: 46, type: "leaf" },
     { name: "CRSSJ", value: 5, type: "leaf" },
+    { name: "DSA", value: 1, type: "leaf" },
     { name: "Faculty Adviser", value: 93, type: "leaf" },
     { name: "Family", value: 18, type: "leaf" },
     //{ name: "Financial Aid", value: 2, type: "leaf" },
