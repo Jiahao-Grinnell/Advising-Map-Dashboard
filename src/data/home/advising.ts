@@ -43,6 +43,7 @@ export const advisinglandscape: Tree = {
     { name: "OISA", value: 9, type: "leaf" },
     { name: "Omsbuds", value: 1, type: "leaf" },
     { name: "Online Resources", value: 31, type: "leaf" },
+    { name: "Registra's Office", value: 31, type: "leaf" },
     { name: "Student Leaders", value: 6, type: "leaf" },
     { name: "Students, Alumni, & Friends", value: 60, type: "leaf" },
     { name: "Supervisors", value: 4, type: "leaf" },
