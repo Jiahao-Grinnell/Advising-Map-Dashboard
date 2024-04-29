@@ -3,7 +3,7 @@ export const onclickdefs = {
      "Academic Advising": "Academic Support & Resources\nCourse Selection & Registration\nCareer Skills (How do I …)\nFinding Balance/Personal Needs\nProfessors and Classes",
   "Academic Department Leadership": "MAPs & Independent Study\n4-Year Planning\nChoosing a Major/Concentraton\nFinding Balance/Personal Needs\nGraduate/Professional School",
   "Academic Resources": "Academic Support & Resources\nInternships/Gaining Experience",
-  "Accessibility and Disability Resources": "Identity-Specific Needs",
+  "Accessibility & Disability Resources": "Identity-Specific Needs",
   "Admission, Financial Aid, & Student Accounts": "Finding Balance/Personal Needs\nIdentity-Specific Needs",
   "Board of Trustees": "Internships/Gaining Experience",
   "CLS": "Internships/Gaining Experience\nCareer Skills (How do I …)\nCareer Planning\nGraduate/Professional School\nOCS & Co-Curriculars\nIdentity-Specific Needs\nAcademic Support & Resources\nFinding Balance/Personal Needs\nProfessors and Classes\nGraduate/Professional School",
