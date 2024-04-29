@@ -20,6 +20,7 @@ export const onclickdefs = {
   "OISA": "OCS & Co-Curriculars\nChoosing a Major/Concentration\nIdentity-Specific Needs\nFinding Balance/Personal Needs",
   "Omsbuds": "Finding Balance/Personal Needs",
   "Online Resources": "Professors and Classes\nCareer Skills (How do I …)\n4-Year Planning\nCourse Selection & Registration\nInternships/Gaining Experience\nAcademic Support & Resources\nGraduate/Professional School\nCareer Planning\nChoosing a Major/Concentraton\nMAPs & Independent Study",
+   "Registrar's Office": "(Did not indicate)",
   "Student Leaders": "Choosing a Major/Concentration\nFinding Balance/Personal Needs\nOCS & Co-Curriculars\nProfessors and Classes",
   "Students, Alumni, & Friends": "Professors and Classes\nFinding Balance/Personal Needs\nAcademic Support & Resources\nGraduate/Professional School\nCourse Selection & Registration\nInternships/Gaining Experience\nMAPs & Independent Study\n4-Year Planning\nCareer Skills (How do I …)\nIdentity-Specific Needs\nCareer Planning\nChoosing a Major/Concentraton\nOCS & Co-Curriculars",
   "Supervisors": "Career Planning\nCourse Selection & Registration\nFinding Balance/Personal Needs\nGraduate/Professional School",
